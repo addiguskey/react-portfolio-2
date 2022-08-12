@@ -12,13 +12,8 @@ const styles = {
   },
 };
 
-export default function About() {
-  const renderTooltip = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      It's not that long, I promise.
-    </Tooltip>
-  );
-  const MyVerticallyCenteredModal = (data) => {
+function MyVerticallyCenteredModal(data) {
+  return (
     <Modal
       {...data}
       size="lg"
@@ -27,23 +22,51 @@ export default function About() {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
+          How I got into coding
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
         <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
+          When I was 15, <br></br>my brother-in-law started a business and asked
+          me if I knew how to build websites. <br></br>I didn't. I said yes.{" "}
+          <br></br>
+          So, I locked myself in my room for the next two weeks and somehow made
+          a website! <br></br>That indescribable feeling of accomplishment and
+          satisfaction stuck with me for a long time. <br></br>
+          <br></br> Fast forward, 8 years later, <br></br>I graduated from
+          University of Denver with a Biochemistry degree thinking that my next
+          steps would be Dental school. But, during the two years of prepping
+          for dental school, I couldn't stop thinking about the coding class I
+          took my very last semester of college. <br></br>So, in April of 2022,
+          I finally decided to do something about it. <br></br>Here we are, a
+          full-stack bootcamp, long nights, too much coffee, and many naps later
+          ! <br></br>
+          <br></br> I am so so excited to be a part of this industry that is so
+          impactful and life-changing.
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={data.onHide}>Close</Button>
+        <Button className="btn-dark" onClick={data.onHide}>
+          Close
+        </Button>
       </Modal.Footer>
-    </Modal>;
-  };
+    </Modal>
+  );
+}
+
+// const renderTooltip = (props) => (
+
+// );
+// const MyVerticallyCenteredModal = (data) => {
+
+// };
+export default function About() {
   const [modalShow, setModalShow] = React.useState(false);
+  const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      It's not that long, I promise
+    </Tooltip>
+  );
   return (
     <div id="about-container" className="p-5 mx-3">
       <div>
@@ -62,7 +85,7 @@ export default function About() {
           className=" card bg-transparent align-items-center mx-4 p-5 justify-content-between"
           style={{ width: "100%", border: "none" }}
         >
-          <div className="row ">
+          <div className="row">
             <div className="col card-body-left" style={{ maxWidth: "25rem" }}>
               <img
                 // varient="left"
@@ -103,7 +126,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="d-flex flex-column align-items-center ml-5">
+        <div className="d-flex flex-column align-items-center ml-5 ">
           <div
             className=" card text-center align-items-center p-4 "
             style={{ borderRadius: "5mm", maxWidth: "30rem" }}
@@ -116,7 +139,7 @@ export default function About() {
             </h6>
             <OverlayTrigger
               placement="bottom"
-              delay={{ show: 250, hide: 400 }}
+              // delay={{ show: 500, hide: 500 }}
               overlay={renderTooltip}
             >
               <Button variant="light" onClick={() => setModalShow(true)}>
@@ -131,20 +154,24 @@ export default function About() {
         </div>
       </div>
       <div
-        className="card text-right my-5 bg-transparent"
+        className="card text-right my-5 bg-transparent "
         style={{ border: "none" }}
       >
         <div className="row ">
           <div
             id="random-container"
-            className="d-flex flex-column col align-items-end"
+            className="d-flex flex-column col align-items-end p-3"
           >
             <div
               style={{
                 fontWeight: "bold",
                 fontSize: "2rem",
+                // border: "1px solid black",
+                backgroundColor: "f4f4f4",
+                position: "absolute",
+                zIndex: 3,
               }}
-              className="card-title p-5  mr-3"
+              className="card-title p-3  mr-2 my-3"
             >
               {" "}
               {/* <div className="vr text-right" style={{ height: "4rem" }} /> */}
@@ -152,31 +179,45 @@ export default function About() {
               <hr />
             </div>
             <div
-              className="col align-items-end card-body ms-auto mr-5"
-              style={{ minWidth: "23rem", maxWidth: "80rem" }}
+              className="col align-items-end card-body ms-auto mr-5 "
+              style={{
+                minWidth: "23rem",
+                maxWidth: "80rem",
+                border: "1px solid black",
+                position: "relative",
+                zIndex: 1,
+                marginTop: "6rem",
+              }}
             >
-              <h6 style={{ fontWeight: "bold" }}>University of Denver</h6>
               <p>
-                2022 <br></br>∙ Full-Stack Coding Bootcamp
+                2022 <br></br>
+                <span style={{ fontWeight: "bold" }}>University of Denver</span>
+                <br></br>∙ Full-Stack Coding Bootcamp
               </p>
               <br></br>
               <p>
                 2015 - 2019 <br></br>
-                (Pre-Dental) <br></br>∙ Biochemistry& Molecular Biology, B.S.{" "}
-                <br></br> ∙ Minor: Mathematics
+                <span style={{ fontWeight: "bold" }}>University of Denver</span>
+                <br></br>
+                <em>Bachelor of Science</em> <br></br>∙ Biochemistry& Molecular
+                Biology (Pre-Dental) <br></br> ∙ Minor: Mathematics
               </p>
             </div>
           </div>
           <div
             id="random-container"
-            className="d-flex flex-column col align-items-start"
+            className="d-flex flex-column col align-items-end p-3"
           >
             <div
               style={{
                 fontWeight: "bold",
                 fontSize: "2rem",
+                // border: "1px solid black",
+                backgroundColor: "f4f4f4",
+                position: "absolute",
+                zIndex: 3,
               }}
-              className="card-title p-5"
+              className="card-title p-3  mr-2 my-3"
             >
               {" "}
               {/* <div className="vr text-right" style={{ height: "4rem" }} /> */}
@@ -184,10 +225,17 @@ export default function About() {
               <hr />
             </div>
             <div
-              className="col card-body ms-auto mr-5"
-              style={{ minWidth: "23rem", maxWidth: "80rem" }}
+              className="col align-items-end card-body ms-auto mr-5 "
+              style={{
+                minWidth: "23rem",
+                maxWidth: "80rem",
+                border: "1px solid black",
+                position: "relative",
+                zIndex: 1,
+                marginTop: "6rem",
+              }}
             >
-              <p className="col">
+              <p className="col p-3">
                 ∙ React.js<br></br>∙ JavaScript/ jQuery<br></br>∙ RESTful API/
                 Third-party APIs/ GraphQL API<br></br>∙ Node.js/ Object-Oriented
                 Programming (OOP)<br></br>∙ Express.js/MySQL/ MongoDB<br></br>∙
@@ -196,16 +244,21 @@ export default function About() {
               </p>
             </div>
           </div>
+
           <div
             id="random-container"
-            className="d-flex flex-column col align-items-end text-align-right ml-5"
+            className="d-flex flex-column col align-items-end p-3"
           >
             <div
               style={{
                 fontWeight: "bold",
                 fontSize: "2rem",
+                // border: "1px solid black",
+                backgroundColor: "f4f4f4",
+                position: "absolute",
+                zIndex: 3,
               }}
-              className="card-title p-4 "
+              className="card-title  p-3"
             >
               {" "}
               {/* <div className="vr text-right" style={{ height: "4rem" }} /> */}
@@ -213,8 +266,15 @@ export default function About() {
               <hr />
             </div>
             <div
-              className="col card-body ms-auto mr-5"
-              style={{ minWidth: "23rem", maxWidth: "80rem" }}
+              className="col card-body ms-auto p-4 align-items-center"
+              style={{
+                minWidth: "23rem",
+                maxWidth: "80rem",
+                border: "1px solid black",
+                position: "relative",
+                zIndex: 1,
+                marginTop: "8rem",
+              }}
             >
               <p className="col">
                 ∙ I'm into fashion and interior design <br></br>∙ a bookworm as
