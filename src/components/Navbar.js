@@ -16,8 +16,8 @@ const styles = {
 export default function Navbar() {
   const saveFile = () => {
     saveAs(
-      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-      "example.pdf"
+      "https://docs.google.com/document/d/1XtCXLYqjRZsqe3s_jf7r3osU4Lt4e52-ZyNyqpFNzTQ/export?format=pdf",
+      "addiG Resume.pdf"
     );
   };
 

@@ -1,15 +1,20 @@
 import React from "react";
-import { saveAs } from "file-saver";
+import { saveAs, FileSaver } from "file-saver";
 import Stack from "react-bootstrap/Stack";
 
 const styles = {};
 export default function Resume() {
-  const saveFile = () => {
-    saveAs(
-      "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-      "example.pdf"
-    );
-  };
+  // const saveFile = () => {
+  //   saveAs(
+  //     "https://docs.google.com/document/d/1XtCXLYqjRZsqe3s_jf7r3osU4Lt4e52-ZyNyqpFNzTQ/export?format=pdf"
+  //   );
+  // };
+  // function sayHello() {
+  //   var blob = new Blob(["Hello, world!"], {
+  //     type: "application/pdf;charset=utf-8",
+  //   });
+  //   FileSaver.saveAs(blob, "addi g Resume.pdf");
+  // }
   return (
     <div className="p-5 mx-3">
       <h1
@@ -73,13 +78,21 @@ export default function Resume() {
       </div>
 
       <div className="text-center">
-        <btn
+        <a
+          href="https://docs.google.com/document/d/1XtCXLYqjRZsqe3s_jf7r3osU4Lt4e52-ZyNyqpFNzTQ/export?format=pdf"
+          download
           style={styles.btn}
-          className="btn-lg btn-outline-dark align-items-center p-3"
-          onClick={saveFile}
+          className="btn-lg btn-outline-dark align-items-center"
         >
+          {/* <btn
+          style={styles.btn}
+          className="btn-lg btn-outline-dark align-items-center"
+          onClick={saveFile}
+          onClick={sayHello}
+        > */}
           Download CV
-        </btn>
+          {/* </btn> */}
+        </a>
       </div>
     </div>
   );
