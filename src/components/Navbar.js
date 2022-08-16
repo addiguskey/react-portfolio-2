@@ -34,9 +34,9 @@ export default function Navbar() {
         <div className="nav-wrapper ">
           <ul style={styles.li} className="menu-items ">
             <li style={styles.li}>
-              <Link to="/home">
+              <Link to="/">
                 <img
-                  src={useLocation().pathname == "/home" ? filler : img}
+                  src={useLocation().pathname == "/" ? filler : img}
                   style={{ height: "6rem" }}
                   id="nav-logo"
                 />
