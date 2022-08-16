@@ -125,7 +125,7 @@ export default function Projects() {
                       style={styles.gh}
                       className="btn-transparent repo bg-transparent"
                       id="gh-mc"
-                    ></img>
+                    />
                   </a>
                   <span>
                     <a
@@ -199,7 +199,7 @@ export default function Projects() {
                       style={styles.gh}
                       className="btn-transparent repo bg-transparent"
                       id="bookify-mc"
-                    ></img>
+                    />
                   </a>
                   <span>
                     <a
@@ -261,7 +261,7 @@ export default function Projects() {
                       style={styles.gh}
                       className="btn-transparent repo bg-transparent"
                       id="rnb-mc"
-                    ></img>
+                    />
                   </a>
                   <span>
                     <a
