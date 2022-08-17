@@ -236,10 +236,10 @@ export default function About() {
               }}
             >
               <p className="col p-3">
-                ∙ React.js<br></br>∙ JavaScript/ jQuery<br></br>∙ RESTful API/
-                Third-party APIs/ GraphQL API<br></br>∙ Node.js/ Object-Oriented
-                Programming (OOP)<br></br>∙ Express.js/MySQL/ MongoDB<br></br>∙
-                Html5 / CSS3 / Bootstrap
+                ∙ React.js<br></br>∙ JavaScript(ES6)/ jQuery<br></br>∙ RESTful
+                API/ Third-party APIs/ GraphQL API<br></br>∙ Node.js/
+                Object-Oriented Programming (OOP)<br></br>∙ Express.js/MySQL/
+                MongoDB<br></br>∙ Html5 / CSS3 / Bootstrap
                 <br></br>∙ Git/ GitHub / npm
               </p>
             </div>
