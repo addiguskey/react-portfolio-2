@@ -2,9 +2,6 @@
   "name": "react-portfolio-2",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "12.11.1"
-  },
   "dependencies": {
     "@apollo/client": "^3.5.8",
     "@testing-library/jest-dom": "^5.16.4",
