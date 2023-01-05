@@ -8,15 +8,16 @@ import filler from "../assets/images/blank.png";
 const styles = {
   li: {
     listStyle: "none",
-    lineHeight: "0.5em",
-    padding: "0.2em",
+    lineHeight: "80%",
+    // padding: "0.2rem",
     marginRight: 0,
   },
 };
 export default function Navbar() {
   const saveFile = () => {
     saveAs(
-      "https://docs.google.com/document/d/1XtCXLYqjRZsqe3s_jf7r3osU4Lt4e52-ZyNyqpFNzTQ/export?format=pdf",
+      // get the sharable link from google docs and include "/export?format=pdf" at the end of the link
+      "https://docs.google.com/document/d/1U6hYeXWdpFpijFLPDTkbg0T3ivmOcojCwX5Pg_YsCnQ/export?format=pdf",
       "addiG Resume.pdf"
     );
   };
@@ -37,7 +38,7 @@ export default function Navbar() {
               <Link to="/">
                 <img
                   src={useLocation().pathname == "/" ? filler : img}
-                  style={{ height: "6rem" }}
+                  style={{ height: "5rem", filter: "invert(0.2)" }}
                   id="nav-logo"
                 />
               </Link>

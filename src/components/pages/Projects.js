@@ -27,14 +27,15 @@ const styles = {
     zIndex: 2,
   },
   mcImg: {
-    position: "relative",
-
-    zIndex: 1,
+    // position: "relative",
+    filter: "grayscale(100)",
+    // zIndex: 1,
   },
   gh: {
     maxWidth: "3rem",
     maxheight: "3rem",
     // filter: "invert(1)",
+    filter: "invert(0.4)",
   },
   logos: {
     filter: "invert(1)",
@@ -81,7 +82,7 @@ export default function Projects() {
                     target="_blank"
                     className=" btn"
                   >
-                    <img src={mc} alt="" id="mcImg" />
+                    <img src={mc} style={styles.mcImg} alt="" id="mcImg" />
                   </a>
                 </div>
                 {/* MC CONTENT */}

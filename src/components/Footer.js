@@ -21,7 +21,7 @@ const styles = {
   },
   img: {
     height: "22rem",
-    marginLeft: "0.4rem",
+    marginLeft: "0.5rem",
   },
   sidebar: {
     // marginTop: 0.5,
@@ -51,7 +51,7 @@ class Footer extends Component {
             <a href="https://github.com/addiguskey" target="_blank">
               <img
                 src={GitHubLogo}
-                style={{ height: "2.3rem" }}
+                style={{ height: "2.3rem", filter: "invert(0.4)" }}
                 id="github-logo"
               />
             </a>
@@ -62,7 +62,7 @@ class Footer extends Component {
               target="_blank"
             >
               <img
-                style={{ height: "2.4rem" }}
+                style={{ height: "2.4rem", filter: "invert(0.4)" }}
                 src={LinkedInLogo}
                 id="linkedin-logo"
               />
@@ -71,26 +71,29 @@ class Footer extends Component {
           <li style={{ listStyle: "none", maxWidth: "2rem" }}>
             <a href="https://twitter.com/addiguskey" target="_blank">
               <img
-                style={{ height: "2.4rem" }}
+                style={{ height: "2.4rem", filter: "invert(0.4)" }}
                 src={TwitterLogo}
                 id="twitter-logo"
               />
             </a>
           </li>
-          <img src={line} style={styles.img}></img>
+          {/* <img src={line} style={styles.img}></img> */}
         </ul>
 
         <div id="foot2">
           {/* <div className="vr" style={styles.line}></div> */}
-          <div className="d-flex flex-column align-items-center p-5">
+          <div
+            className="d-flex flex-column align-items-center  p-5"
+            style={{ marginTop: "15%" }}
+          >
             {this.state.screenSizeFits && (
-              <img src={qr} style={{ height: "5.8rem" }}></img>
+              <img src={qr} style={{ height: "4.5rem" }}></img>
             )}
             {!this.state.screenSizeFits && (
               <img src={image} style={{ height: "2.5rem" }}></img>
             )}
 
-            <p style={{ color: "gray" }} id="foot">
+            <p style={{ color: "gray", fontSize: "0.8rem" }} id="foot">
               Designed and Built by Addi Guskey
             </p>
           </div>

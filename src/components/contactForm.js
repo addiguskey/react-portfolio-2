@@ -33,6 +33,7 @@ const styles = {
     border: "none",
   },
 };
+
 export default function ContactForm(props) {
   const form = useRef();
 
@@ -75,14 +76,14 @@ export default function ContactForm(props) {
             <textarea name="message" style={styles.msg} id="msg-box" />
           </div>
           <div className="col" style={styles.info}>
-            <label style={styles.label}>name:</label>
+            <label style={styles.label}>Your name:</label>
             <input
               type="text"
               name="user_name"
               style={styles.input}
               // className="bg-transparent"
             />
-            <label style={styles.label}>email:</label>
+            <label style={styles.label}>Your email:</label>
             <input type="email" name="user_email" style={styles.input} />
             <input
               type="submit"
@@ -91,18 +92,6 @@ export default function ContactForm(props) {
               className="btn btn-outline-dark"
             />
           </div>
-        </div>
-
-        <div>
-          {/* {emailSent ? (
-          <p>I will get back to you ASAP !</p>
-        ) : (
-          <p>
-            Ope, something went wrong! Please contact me directly at{" "}
-            <a href="mailto:addisonguskey@gmail.com">addisonguskey@gmail.com</a>{" "}
-            directly.
-          </p>
-        )} */}
         </div>
       </form>
     </div>

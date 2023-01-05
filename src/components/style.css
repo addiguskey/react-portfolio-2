@@ -6,10 +6,10 @@
 }
 #home, #about-me, #projects, #contact{
     float: right;
-   
+line-height: 90%;
 }
 .nav {
-    margin-top: 2%;
+    margin-top: 1%;
     margin-right: 3%;
     align-items: end;
     background-color: #f1f3f5;
@@ -22,18 +22,20 @@
     color: black;
 }
 #nav-logo:hover {
-    transform: scale(1.2);
-        transition: all .5s ease-in-out;
-    
+    /* transform: scale(1.2);
+        transition: all .5s ease-in-out; */
+    filter: invert(0.5) !important;
       
 }
 #gh-mc:hover, #bookify-mc:hover, #rnb-mc:hover {
-transform: scale(1.4);
-    transition: all .5s ease-in-out;
+/* transform: scale(1.4);
+    transition: all .5s ease-in-out; */
+        filter: none !important;
 }
 #github-logo:hover, #linkedin-logo:hover, #twitter-logo:hover {
-    transform: scale(1.4);
-    transition: all .5s ease-in-out;
+    /* transform: scale(1.4);
+    transition: all .5s ease-in-out; */
+    filter: none !important;
 }
 #toggle {
     display:none
@@ -126,22 +128,22 @@ s
   }
     .hamburger {
             position: absolute;
-            top: 5em;
+            top: 4em;
             right: 5%;
             margin-left: -2em;
             margin-top: -45px;
             width: 2em;
-            height: 45px;
+            height: 25px;
             z-index: 8;
         }
     
         .hamburger div {
             position: relative;
-            width: 3em;
-            height: 7px;
-            border-radius: 3px;
+            width: 1.6em;
+            height: 5px;
+            border-radius: 5px;
             background-color: black;
-            margin-top: 8px;
+            margin-top: 2px;
             transition: all 0.3s ease-in-out;
         }
     
@@ -175,9 +177,9 @@ s
     
         .nav-wrapper .menu-items {
             position: relative;
-            font-size: 2em;
+            font-size: 0.4em;
             display: inline-block;
-            margin-top: 1.25em;
+            margin-top: 1em;
             transition: color 0.2s ease-in-out;
         }
  
