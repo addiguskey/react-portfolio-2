@@ -292,31 +292,33 @@ const styles = {
     lineHeight: 0.5,
   },
   mlmalogo: {
-    filter: "opacity(50%)",
+    filter: "opacity(60%)",
     height: "17rem",
     width: "auto",
     marginTop: "0rem",
+    marginLeft: "0.5rem",
   },
   mclogo: {
-    filter: "opacity(40%)",
+    filter: "opacity(60%)",
     height: "19rem",
     width: "auto",
     marginTop: "-1rem",
     marginBottom: "-1rem",
   },
   booklogo: {
-    filter: "opacity(40%)",
-    height: "16.5rem",
+    filter: "opacity(50%)",
+    height: "16rem",
     width: "auto",
-    marginTop: "0.3rem",
-    marginLeft: "1rem",
+    marginTop: "1rem",
+    marginLeft: "1.5rem",
+    marginBottom: "0rem",
   },
   rnblogo: {
-    filter: "opacity(40%)",
-    height: "18.3rem",
+    filter: "opacity(50%)",
+    height: "18.2rem",
     width: "auto",
     marginTop: "-0.5rem",
-    marginBottom: "-1rem",
+    marginBottom: "-0.8rem",
   },
 };
 export default function Projects() {
@@ -353,7 +355,18 @@ export default function Projects() {
                 </p>
                 <div className="mx-4">
                   {" "}
-                  <img src={mlma} style={styles.mlmalogo}></img>
+                  <a
+                    href="https://addiguskey.github.io/Rhythm-and-Booze/"
+                    target="_blank"
+                    clssName="projlogo"
+                  >
+                    <img
+                      src={mlma}
+                      style={styles.mlmalogo}
+                      href="https://addiguskey.github.io/Rhythm-and-Booze/"
+                      target="_blank"
+                    ></img>
+                  </a>
                 </div>
                 <a href="https://github.com/addiguskey/mlma" target="_blank">
                   <img
@@ -384,8 +397,13 @@ export default function Projects() {
                   <em>order your favorite scoops online& subscribe</em>
                 </p>
                 <div className="mx-2">
-                  {" "}
-                  <img src={mc} style={styles.mclogo}></img>
+                  <a
+                    href="https://the-melted-cone.herokuapp.com/"
+                    target="_blank"
+                    clssName="projlogo"
+                  >
+                    <img src={mc} style={styles.mclogo}></img>
+                  </a>
                 </div>
 
                 <a
@@ -419,8 +437,13 @@ export default function Projects() {
                   <em>find your next book with a quiz</em>
                 </p>
                 <div className="mx-4">
-                  {" "}
-                  <img src={bookify} style={styles.booklogo}></img>
+                  <a
+                    href="https://bookify-project-du.herokuapp.com/"
+                    target="_blank"
+                  >
+                    {" "}
+                    <img src={bookify} style={styles.booklogo}></img>
+                  </a>
                 </div>
                 <a href="https://github.com/addiguskey/bookify" target="_blank">
                   <img
@@ -451,7 +474,12 @@ export default function Projects() {
                 </p>
                 <div className="mx-4">
                   {" "}
-                  <img src={rnb} style={styles.rnblogo}></img>
+                  <a
+                    href="https://addiguskey.github.io/Rhythm-and-Booze/"
+                    target="_blank"
+                  >
+                    <img src={rnb} style={styles.rnblogo}></img>
+                  </a>
                 </div>
                 <a
                   href="https://github.com/addiguskey/Rhythm-and-Booze"
