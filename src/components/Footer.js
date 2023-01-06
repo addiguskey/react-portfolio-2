@@ -84,7 +84,7 @@ class Footer extends Component {
           {/* <div className="vr" style={styles.line}></div> */}
           <div
             className="d-flex flex-column align-items-center  p-5"
-            style={{ marginTop: "15%" }}
+            style={{ marginTop: "5%" }}
           >
             {this.state.screenSizeFits && (
               <img src={qr} style={{ height: "4.5rem" }}></img>

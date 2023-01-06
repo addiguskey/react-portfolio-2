@@ -27,6 +27,28 @@ line-height: 90%;
     filter: invert(0.5) !important;
       
 }
+/* PROJ */
+.ghlogo:hover {
+    filter: invert(0.5) !important;
+}
+
+a:link {
+        text-decoration: none !important;
+}
+
+a:visited {
+        text-decoration: none !important;
+            filter: invert(0.5) !important;
+}
+
+a:hover {
+        text-decoration: none !important;
+            filter: invert(0.4) !important;
+}
+
+a:active {
+        text-decoration: none !important;
+}
 #gh-mc:hover, #bookify-mc:hover, #rnb-mc:hover {
 /* transform: scale(1.4);
     transition: all .5s ease-in-out; */
