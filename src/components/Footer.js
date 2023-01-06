@@ -57,10 +57,7 @@ class Footer extends Component {
             </a>
           </li>
           <li style={{ listStyle: "none", maxWidth: "2rem" }}>
-            <a
-              href="https://www.linkedin.com/in/addi-guskey-533998185/"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/addiguskey/" target="_blank">
               <img
                 style={{ height: "2.4rem", filter: "invert(0.4)" }}
                 src={LinkedInLogo}

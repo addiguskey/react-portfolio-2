@@ -27,6 +27,10 @@ line-height: 90%;
     filter: invert(0.5) !important;
       
 }
+/* ABOUT */
+#pups:hover {
+color: black;
+}
 /* PROJ */
 .ghlogo:hover {
     filter: invert(0.5) !important;
@@ -43,22 +47,13 @@ a:visited {
 
 a:hover {
         text-decoration: none !important;
-            filter: invert(0.4) !important;
+        filter: invert(0.5) !important;
 }
 
 a:active {
         text-decoration: none !important;
 }
-#gh-mc:hover, #bookify-mc:hover, #rnb-mc:hover {
-/* transform: scale(1.4);
-    transition: all .5s ease-in-out; */
-        filter: none !important;
-}
-#github-logo:hover, #linkedin-logo:hover, #twitter-logo:hover {
-    /* transform: scale(1.4);
-    transition: all .5s ease-in-out; */
-    filter: none !important;
-}
+
 #toggle {
     display:none
 }
@@ -93,9 +88,7 @@ padding: 0px 0.5px;
 #postcard-row {
     max-height: 22rem;
 }
-#mcImg:hover, #bookifyImg:hover {
-    filter: grayscale(0)
-}
+
 #socials {
     position:relative;
     z-index: 1;
@@ -104,14 +97,20 @@ padding: 0px 0.5px;
         margin-top: -15rem;
         background-color: transparent;
 }
+.socials-ul-li-a:hover {
+    filter: invert(-1) !important;
+}
+
 #foot2 {
     position: relative;
     z-index: 2;
-    margin-top: -10rem;
+    margin-top: -12rem;
 }
 .socials-ul {
-    padding: 0px 2rem 0px 2rem;
-    Margin: 0px 0px 0px;
+    padding: 0px 2rem 0px 3rem;
+    z-index: 3;
+    /* Margin: 0px 0px -0px; */
+    /* margin-bottom: "20rem"; */
 }
 @media screen and (max-width: 986px) {
     #about-vr {

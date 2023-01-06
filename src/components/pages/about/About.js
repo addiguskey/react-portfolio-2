@@ -123,6 +123,7 @@ export default function About() {
                   }}
                   href="http://instagram.com/khione.and.udon"
                   target="_blank"
+                  id="pups"
                 >
                   Khione and Udon
                 </a>

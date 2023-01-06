@@ -7,6 +7,15 @@ const styles = {
     backgroundColor: "f4f4f4",
     position: "absolute",
     zIndex: 3,
+    marginRight: "1.5rem",
+  },
+  skillstitle: {
+    fontWeight: "bold",
+    fontSize: "2rem",
+    backgroundColor: "f4f4f4",
+    position: "absolute",
+    zIndex: 3,
+    marginRight: "3.5rem",
   },
   education: {
     minWidth: "23rem",
@@ -25,6 +34,7 @@ const styles = {
     position: "relative",
     zIndex: 1,
     marginTop: "6rem",
+    marginRight: "2rem",
   },
   random: {
     minWidth: "23rem",
@@ -61,7 +71,7 @@ export default function AboutCards() {
               className="col align-items-end card-body ms-auto mr-5 "
               style={styles.education}
             >
-              <p style={{ marginTop: "2rem" }}>
+              <p style={{ marginTop: "2rem", marginLeft: "1.5rem" }}>
                 2022 <br></br>
                 <p style={{ fontWeight: "bold" }}>
                   University of Denver
@@ -71,7 +81,7 @@ export default function AboutCards() {
                 </p>
               </p>
 
-              <p>
+              <p style={{ marginLeft: "1.5rem", marginRight: "1.5rem" }}>
                 2015 - 2019
                 <p style={{ fontWeight: "bold" }}>
                   University of Denver{" "}
@@ -93,9 +103,8 @@ export default function AboutCards() {
             id="skills-container"
             className="d-flex flex-column col align-items-end p-3"
           >
-            <div style={styles.title} className="card-title p-3  mr-2 my-3">
+            <div style={styles.skillstitle} className="card-title p-3 my-3">
               {" "}
-              {/* <div className="vr text-right" style={{ height: "4rem" }} /> */}
               skills
               <hr />
             </div>
@@ -103,7 +112,7 @@ export default function AboutCards() {
               className="col align-items-end card-body ms-auto mr-5 "
               style={styles.skills}
             >
-              <p className="col p-3">
+              <p className="col p-3 mt-2">
                 <ul>
                   <li>React.js</li>
                   <li>JavaScript(ES6)/ jQuery</li>
@@ -128,7 +137,6 @@ export default function AboutCards() {
           >
             <div style={styles.title} className="card-title  p-3">
               {" "}
-              {/* <div className="vr text-right" style={{ height: "4rem" }} /> */}
               random<br></br>facts
               <hr />
             </div>
@@ -137,7 +145,7 @@ export default function AboutCards() {
               style={styles.random}
             >
               <p className="col">
-                <ul>
+                <ul style={{ marginTop: "8%" }}>
                   <li>I'm into fashion and interior design</li>
                   <li>a bookworm as of recent!</li>
                   <li>
