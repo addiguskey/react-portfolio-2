@@ -1,13 +1,10 @@
 import React, { Component } from "react";
-// import "../style.css";
-import qr from "../assets/images/Addison_Guskey.png";
-import image from "../assets/images/logo-darkmode.png";
-// import { useLocation } from "react-router-dom";
-import GitHubLogo from "../assets/images/github-logo.png";
-import LinkedInLogo from "../assets/images/linkedin-logo-1.png";
-import TwitterLogo from "../assets/images/twitter-logo.png";
-import line from "../assets/images/line2.png";
-// import { useLocation } from "react-router";
+import qr from "../assets/images/logos/Addison_Guskey.png";
+import image from "../assets/images/logos/logo-darkmode.png";
+import GitHubLogo from "../assets/images/logos/github-logo.png";
+import LinkedInLogo from "../assets/images/logos/linkedin-logo-1.png";
+import TwitterLogo from "../assets/images/logos/twitter-logo.png";
+
 const styles = {
   foot: {
     fontSize: 14,

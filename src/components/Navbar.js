@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { Link, useLocation } from "react-router-dom";
-import img from "../assets/images/navg.png";
+import img from "../assets/images/logos/navg.png";
 import { saveAs } from "file-saver";
 import filler from "../assets/images/blank.png";
 

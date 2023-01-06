@@ -1,25 +1,10 @@
 import React from "react";
-
-import mc from "../../assets/images/melted-cone.png";
-import bookify from "../../assets/images/bookify.png";
-import rnb from "../../assets/images/rhythm.png";
-import githubImg from "../../assets/images/github-logo.png";
+import githubImg from "../../assets/images/logos/github-logo.png";
 import "../style.scss";
-import linkImg from "../../assets/images/link copy.png";
-import stripe from "../../assets/images/stripe.png";
-import react from "../../assets/images/reactjs.png";
-import node from "../../assets/images/nodejs.png";
-import bs from "../../assets/images/bootstrap.png";
-import gql from "../../assets/images/gql.png";
-import mdb from "../../assets/images/mdb.png";
-import sql from "../../assets/images/sql.png";
-import handlebars from "../../assets/images/handlebars.png";
-import express from "../../assets/images/expressjs.png";
-import axios from "../../assets/images/axios-.png";
-import mysql from "../../assets/images/mysql.png";
-import html from "../../assets/images/html.png";
-import css from "../../assets/images/css.png";
-import js from "../../assets/images/js.png";
+import mlma from "../../assets/images/projlogos/mlmalogo.png";
+import mc from "../../assets/images/projlogos/mclogo.png";
+import bookify from "../../assets/images/projlogos/bookifylogo.png";
+import rnb from "../../assets/images/projlogos/rnblogo.png";
 
 // const styles = {
 //   mcText: {
@@ -290,12 +275,13 @@ const styles = {
     backgroundColor: "#C8C8C8",
     height: "25rem",
     width: "23rem",
+    zIndex: 2,
   },
   ghlogo: {
     maxWidth: "3rem",
     maxheight: "3rem",
     marginLeft: "18.5rem",
-    marginTop: "17rem",
+    marginTop: "0rem",
   },
   title: {
     fontWeight: "bold",
@@ -304,6 +290,33 @@ const styles = {
   },
   content: {
     lineHeight: 0.5,
+  },
+  mlmalogo: {
+    filter: "opacity(50%)",
+    height: "17rem",
+    width: "auto",
+    marginTop: "0rem",
+  },
+  mclogo: {
+    filter: "opacity(40%)",
+    height: "19rem",
+    width: "auto",
+    marginTop: "-1rem",
+    marginBottom: "-1rem",
+  },
+  booklogo: {
+    filter: "opacity(40%)",
+    height: "16.5rem",
+    width: "auto",
+    marginTop: "0.3rem",
+    marginLeft: "1rem",
+  },
+  rnblogo: {
+    filter: "opacity(40%)",
+    height: "18.3rem",
+    width: "auto",
+    marginTop: "-0.5rem",
+    marginBottom: "-1rem",
   },
 };
 export default function Projects() {
@@ -338,6 +351,10 @@ export default function Projects() {
                 <p style={styles.content}>
                   <em>martial arts website revamped</em>
                 </p>
+                <div className="mx-4">
+                  {" "}
+                  <img src={mlma} style={styles.mlmalogo}></img>
+                </div>
                 <a href="https://github.com/addiguskey/mlma" target="_blank">
                   <img
                     className="ghlogo"
@@ -366,6 +383,11 @@ export default function Projects() {
                 <p style={styles.content}>
                   <em>order your favorite scoops online& subscribe</em>
                 </p>
+                <div className="mx-2">
+                  {" "}
+                  <img src={mc} style={styles.mclogo}></img>
+                </div>
+
                 <a
                   href="https://github.com/addiguskey/theMeltedCone"
                   target="_blank"
@@ -396,6 +418,10 @@ export default function Projects() {
                 <p style={styles.content}>
                   <em>find your next book with a quiz</em>
                 </p>
+                <div className="mx-4">
+                  {" "}
+                  <img src={bookify} style={styles.booklogo}></img>
+                </div>
                 <a href="https://github.com/addiguskey/bookify" target="_blank">
                   <img
                     className="ghlogo"
@@ -423,6 +449,10 @@ export default function Projects() {
                 <p style={styles.content}>
                   <em>your friday night plans</em>
                 </p>
+                <div className="mx-4">
+                  {" "}
+                  <img src={rnb} style={styles.rnblogo}></img>
+                </div>
                 <a
                   href="https://github.com/addiguskey/Rhythm-and-Booze"
                   target="_blank"

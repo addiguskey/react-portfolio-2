@@ -3,7 +3,6 @@ import me from "../../../assets/images/me.png";
 import Button from "react-bootstrap/Button";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import Stack from "react-bootstrap/Stack";
 import Modal from "react-bootstrap/Modal";
 import code from "../../../assets/images/code.png";
 import AboutCards from "./AboutCards";

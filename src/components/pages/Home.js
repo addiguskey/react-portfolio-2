@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import Image from "../../assets/images/navg.png";
+import Image from "../../assets/images/logos/navg.png";
 
 const styles = {};
 export default function Home() {
