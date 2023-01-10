@@ -342,10 +342,7 @@ export default function Projects() {
           <div className="col p-2">
             <div className="card border-0 p-2 " style={styles.card}>
               <div className="card-content mx-2">
-                <a
-                  href="https://addiguskey.github.io/Rhythm-and-Booze/"
-                  target="_blank"
-                >
+                <a href="https://github.com/addiguskey/mlma" target="_blank">
                   <h2 className="proj-title" style={styles.title}>
                     mlma
                   </h2>
@@ -356,14 +353,14 @@ export default function Projects() {
                 <div className="mx-4">
                   {" "}
                   <a
-                    href="https://addiguskey.github.io/Rhythm-and-Booze/"
+                    href="https://github.com/addiguskey/mlma"
                     target="_blank"
                     clssName="projlogo"
                   >
                     <img
                       src={mlma}
                       style={styles.mlmalogo}
-                      href="https://addiguskey.github.io/Rhythm-and-Booze/"
+                      href="https://github.com/addiguskey/mlma"
                       target="_blank"
                     ></img>
                   </a>

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div
       className="d-flex flex-column align-itmes-center p-4"
-      style={{ marginTop: "7%" }}
+      style={{ marginTop: "6%" }}
     >
       <div className="align-itmes-center text-center">
         <h1 style={{ fontSize: "2.7rem" }}>
