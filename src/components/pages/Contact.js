@@ -5,9 +5,12 @@ import stamp from "../../assets/images/stamp.png";
 import code from "../../assets/images/code.png";
 
 const styles = {
+  all: {
+    color: "a9aea2",
+  },
   a: {
     textWeight: "bold",
-    color: "black",
+    color: "a9aea2",
   },
   posrtcard: {
     borderRadius: "5mm",
@@ -27,11 +30,12 @@ export default function Contact() {
     setError(isError);
   };
   return (
-    <div className="p-5 mx-3">
+    <div className="p-5 mx-3" style={styles.all}>
       <h1
         style={{
           fontWeight: "bold",
           fontSize: "3rem",
+          color: "#f4f593",
         }}
       >
         let's connect.

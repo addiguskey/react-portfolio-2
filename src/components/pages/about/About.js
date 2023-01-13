@@ -11,6 +11,9 @@ const styles = {
   sidebar: {
     zIndex: -1,
   },
+  all: {
+    color: "#a9aea2",
+  },
 };
 
 function MyVerticallyCenteredModal(data) {
@@ -63,12 +66,13 @@ export default function About() {
     </Tooltip>
   );
   return (
-    <div id="about-container" className="mx-5">
+    <div id="about-container" className="mx-5" style={styles.all}>
       <div>
         <h1
           style={{
             fontWeight: "bold",
             fontSize: "3rem",
+            color: "#f4f593",
           }}
         >
           about.
@@ -93,7 +97,7 @@ export default function About() {
                 }}
               />
             </div>
-            <div className="vr" id="about-vr" />
+            <div className="vr" id="about-vr" style={{ color: "a9aea2" }} />
             <div
               className="col card-body-right align-itmes-center"
               style={{ minWidth: "23rem", maxWidth: "40rem" }}
@@ -101,39 +105,50 @@ export default function About() {
               <h5 className="card-title" style={{ fontWeight: "bolder" }}>
                 Hi!
               </h5>
-              <p className="card-text">
-                My name is Addi. <br></br>I took a coding class on a whim during
-                my last semester of college and fell in love. Here we are a few
-                years later!<br></br>
-                <br></br>{" "}
-                <span style={{ fontWeight: "bold" }}>
-                  I am a compassionate self-starter who wants to make an impact.
-                </span>
-                <br></br>
-                <br></br>
-                When I am not coding, you can find me <br></br>∙ running
-                <br></br>∙ painting<br></br>∙ skiing<br></br>∙ hiking with my
-                two pups,{" "}
-                <a
-                  style={{
-                    textDecoration: "none",
-                    color: "gray",
-                    fontWeight: "bold",
-                  }}
-                  href="http://instagram.com/khione.and.udon"
-                  target="_blank"
-                  id="pups"
-                >
-                  Khione and Udon
-                </a>
+              <p className="card-text">My name is Addi Guskey. </p>
+              <p style={{ color: "#f4f593" }}>
+                I'm currently a Freelance Front End Developer who has experience
+                in React.js, Node.js, MySQL, and various JS frameworks.
               </p>
+
+              <p style={{ fontWeight: "bold" }}>
+                I am a compassionate self-starter and a team-player who wants to
+                make an impact.
+              </p>
+
+              <p>When I am not coding, you can find me </p>
+              <ul>
+                <li>running</li>
+                <li>painting</li>
+                <li>skiing</li>
+                <li>
+                  hiking with my two pups,{" "}
+                  <a
+                    style={{
+                      textDecoration: "none",
+                      color: "a9aea2",
+                      fontWeight: "bold",
+                    }}
+                    href="http://instagram.com/khione.and.udon"
+                    target="_blank"
+                    id="pups"
+                  >
+                    Khione and Udon
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <div className="d-flex flex-column align-items-center ml-5 my-5">
           <div
             className=" card text-center align-items-center p-4 mt-5"
-            style={{ borderRadius: "5mm", maxWidth: "30rem" }}
+            style={{
+              borderRadius: "5mm",
+              maxWidth: "30rem",
+              backgroundColor: "a9aea2",
+              color: "2a4e35",
+            }}
           >
             <h6 className="my-4" style={{ fontWeight: "bold" }}>
               <div className="blockquote-custom-icon bg-black ">
@@ -146,7 +161,11 @@ export default function About() {
               // delay={{ show: 500, hide: 500 }}
               overlay={renderTooltip}
             >
-              <Button variant="light" onClick={() => setModalShow(true)}>
+              <Button
+                variant="transparent"
+                onClick={() => setModalShow(true)}
+                style={{ color: "e7e4db" }}
+              >
                 README.md
               </Button>
             </OverlayTrigger>

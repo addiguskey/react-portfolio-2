@@ -24,7 +24,7 @@ line-height: 90%;
 #nav-logo:hover {
     /* transform: scale(1.2);
         transition: all .5s ease-in-out; */
-    filter: invert(0.5) !important;
+    filter: invert(0.1) !important;
       
 }
 /* ABOUT */
@@ -42,12 +42,13 @@ a:link {
 
 a:visited {
         text-decoration: none !important;
-            filter: invert(0.5) !important;
+            filter: opacity(100%) !important;
 }
 
 a:hover {
         text-decoration: none !important;
-        filter: invert(0.4) !important;
+        filter: invert(0.3) !important;
+                    /* filter: none !important; */
         /* filter: grayscale(0%) !important; */
         /* filter: brightness(1.0) !important; */
 }

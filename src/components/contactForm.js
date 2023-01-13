@@ -9,19 +9,25 @@ const styles = {
   label: {
     fontWeight: "bold",
     fontSize: 20,
+    lineHeight: 1.5,
   },
   msg: {
     width: "100%",
+    marginTop: "0.3rem",
+    color: "white",
     height: "52%",
-    // marginBottom: 10,
     border: "none",
     borderBottom: " 2px solid #fffff",
+    backgroundColor: "b3a4b5",
+    lineHeight: 1.5,
   },
   input: {
     width: "100%",
-    // marginBottom: 10,
+    lineHeight: 2,
     border: "none",
     borderBottom: " 2px solid #fffff",
+    backgroundColor: "b3a4b5",
+    color: "white",
   },
   info: {
     marginTop: "9rem",
@@ -31,6 +37,7 @@ const styles = {
     marginTop: "1rem",
     marginBottom: "15rem",
     border: "none",
+    color: "a9aea2",
   },
 };
 

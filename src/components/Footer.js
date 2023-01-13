@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import qr from "../assets/images/logos/Addison_Guskey.png";
+import qrcode from "../assets/images/logos/qrcode.png";
 import image from "../assets/images/logos/logo-darkmode.png";
 import GitHubLogo from "../assets/images/logos/github-logo.png";
 import LinkedInLogo from "../assets/images/logos/linkedin-logo-1.png";
@@ -42,13 +43,13 @@ class Footer extends Component {
 
   render() {
     return (
-      <div id="socials" className="d-flex flex-column my-1">
+      <div id="socials" className="d-flex flex-column my-5">
         <ul className="socials-ul">
           <li style={{ listStyle: "none", maxWidth: "2rem" }}>
             <a href="https://github.com/addiguskey" target="_blank">
               <img
                 src={GitHubLogo}
-                style={{ height: "2.3rem", filter: "invert(0.4)" }}
+                style={{ height: "2.3rem", filter: "invert(0.1)" }}
                 id="github-logo"
               />
             </a>
@@ -56,7 +57,7 @@ class Footer extends Component {
           <li style={{ listStyle: "none", maxWidth: "2rem" }}>
             <a href="https://www.linkedin.com/in/addiguskey/" target="_blank">
               <img
-                style={{ height: "2.4rem", filter: "invert(0.4)" }}
+                style={{ height: "2.4rem", filter: "invert(0.1)" }}
                 src={LinkedInLogo}
                 id="linkedin-logo"
               />
@@ -65,7 +66,7 @@ class Footer extends Component {
           <li style={{ listStyle: "none", maxWidth: "2rem" }}>
             <a href="https://twitter.com/addiguskey" target="_blank">
               <img
-                style={{ height: "2.4rem", filter: "invert(0.4)" }}
+                style={{ height: "2.4rem", filter: "invert(0.1)" }}
                 src={TwitterLogo}
                 id="twitter-logo"
               />
@@ -78,10 +79,10 @@ class Footer extends Component {
           {/* <div className="vr" style={styles.line}></div> */}
           <div
             className="d-flex flex-column align-items-center  p-5"
-            style={{ marginTop: "9%" }}
+            style={{ marginTop: "14%" }}
           >
             {this.state.screenSizeFits && (
-              <img src={qr} style={{ height: "4.5rem" }}></img>
+              <img src={qrcode} style={{ height: "4.5rem" }}></img>
             )}
             {!this.state.screenSizeFits && (
               <img src={image} style={{ height: "2.5rem" }}></img>

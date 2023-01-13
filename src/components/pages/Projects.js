@@ -272,10 +272,11 @@ import rnb from "../../assets/images/projlogos/rnblogo.png";
 const styles = {
   card: {
     borderRadius: "5mm",
-    backgroundColor: "#C8C8C8",
+    backgroundColor: "#afb9b2",
     height: "25rem",
     width: "23rem",
     zIndex: 2,
+    filter: "opacity(80%)",
   },
   ghlogo: {
     maxWidth: "3rem",
@@ -286,27 +287,28 @@ const styles = {
   title: {
     fontWeight: "bold",
     textDecoration: "none",
-    color: "black",
+    color: "2d3a31",
   },
   content: {
     lineHeight: 0.5,
+    color: "2d3a31",
   },
   mlmalogo: {
-    filter: "opacity(60%)",
+    filter: "opacity(100%)",
     height: "17rem",
     width: "auto",
     marginTop: "0rem",
     marginLeft: "0.5rem",
   },
   mclogo: {
-    filter: "opacity(60%)",
+    filter: "opacity(100%)",
     height: "19rem",
     width: "auto",
     marginTop: "-1rem",
     marginBottom: "-1rem",
   },
   booklogo: {
-    filter: "opacity(50%)",
+    filter: "opacity(100%)",
     height: "16rem",
     width: "auto",
     marginTop: "1rem",
@@ -314,7 +316,7 @@ const styles = {
     marginBottom: "0rem",
   },
   rnblogo: {
-    filter: "opacity(50%)",
+    filter: "opacity(100%)",
     height: "18.2rem",
     width: "auto",
     marginTop: "-0.5rem",
@@ -329,13 +331,14 @@ export default function Projects() {
           style={{
             fontWeight: "bold",
             fontSize: "3rem",
+            color: "#f4f593",
           }}
         >
           projects.
         </h1>
       </div>
-      <div className="d-flex flex-column p-3 justify-content between">
-        <div className="row  p-5">
+      <div className="d-flex flex-column p-3 ">
+        <div className="row p-5" style={{ marginLeft: "6rem" }}>
           {/* ----------------------------------------------- */}
           {/* ----------------------mlma----------------------*/}
           {/* ----------------------------------------------- */}
