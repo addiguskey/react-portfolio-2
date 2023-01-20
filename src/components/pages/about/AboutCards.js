@@ -8,7 +8,7 @@ const styles = {
     position: "absolute",
     zIndex: 3,
     marginRight: "1.5rem",
-    color: "#f4f593",
+    color: "#1E5CD7",
   },
   skillstitle: {
     fontWeight: "bold",
@@ -17,7 +17,7 @@ const styles = {
     position: "absolute",
     zIndex: 3,
     marginRight: "3.5rem",
-    color: "#f4f593",
+    color: "#1E5CD7",
   },
   education: {
     minWidth: "23rem",

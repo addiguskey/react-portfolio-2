@@ -1,501 +1,463 @@
 import React from "react";
 import githubImg from "../../assets/images/logos/github-logo.png";
-import "../style.scss";
 import mlma from "../../assets/images/projlogos/mlmalogo.png";
 import mc from "../../assets/images/projlogos/mclogo.png";
 import bookify from "../../assets/images/projlogos/bookifylogo.png";
 import rnb from "../../assets/images/projlogos/rnblogo.png";
-
-// const styles = {
-//   mcText: {
-//     position: "fixed",
-//     zIndex: 2,
-//   },
-//   mcImg: {
-//     // position: "relative",
-//     filter: "grayscale(100)",
-//     // zIndex: 1,
-//   },
-//   gh: {
-//     maxWidth: "3rem",
-//     maxheight: "3rem",
-//     // filter: "invert(1)",
-//     filter: "invert(0.4)",
-//   },
-//   logos: {
-//     filter: "invert(1)",
-//     maxWidth: 80,
-//     maxheight: "0.3rem",
-//   },
-//   logo1: {
-//     width: "auto",
-//     height: "2rem",
-//   },
-//   logo2: {
-//     maxWidth: "2rem",
-//     maxheight: "2rem",
-//   },
-//   cards: {
-//     marginTop: "5rem",
-//   },
-// };
-// export default function Projects() {
-//   return (
-//     <div className="p-3 mx-5">
-//       <div>
-//         <h1
-//           style={{
-//             fontWeight: "bold",
-//             fontSize: "3rem",
-//           }}
-//         >
-//           projects.
-//         </h1>
-//       </div>
-
-//       <div className="container d-flex flex-column my-5 p-2 justify-content-between">
-//         <div className="row mt-5 my-5" style={styles.cards}>
-//           {/* //////////////////////////////////////////////////////// */}
-//           {/* //////////////////////////////////////////////////////// */}
-//           {/* MC CARD */}
-//           <div className="preview-card">
-//             <div className="preview-card__wrp">
-//               <div className="preview-card__item">
-//                 <div className="preview-card__img">
-//                   <a
-//                     href="https://the-melted-cone.herokuapp.com/"
-//                     target="_blank"
-//                     className=" btn"
-//                   >
-//                     <img src={mc} style={styles.mcImg} alt="" id="mcImg" />
-//                   </a>
-//                 </div>
-//                 {/* MC CONTENT */}
-
-//                 <div className="preview-card__content">
-//                   <span className="preview-card__code">July 2022</span>
-//                   <div className="preview-card__title">the Melted Cone</div>
-//                   <div className="preview-card__text">
-//                     Ice cream e-commerce app that delivers straight to your
-//                     door. <br></br>Subscribe and never worry about running out
-//                     of ice cream!<br></br>
-//                     <br></br>
-//                     <span>
-//                       <img src={stripe} style={styles.logos} id="stripe-logo" />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={react} style={styles.logo1} />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={node} style={styles.logo2} />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={bs} style={styles.logo2} />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={gql} style={styles.logo2} />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={mdb} style={styles.logo2} />
-//                     </span>{" "}
-//                   </div>
-//                   <br></br>
-//                   {/* MC LINK */}
-//                   <a
-//                     href="https://github.com/addiguskey/theMeltedCone"
-//                     target="_blank"
-//                   >
-//                     {" "}
-//                     <img
-//                       src={githubImg}
-//                       style={styles.gh}
-//                       className="btn-transparent repo bg-transparent"
-//                       id="gh-mc"
-//                     />
-//                   </a>
-//                   <span>
-//                     <a
-//                       href="https://the-melted-cone.herokuapp.com/"
-//                       target="_blank"
-//                       className="btn btn-outline-dark mx-3"
-//                     >
-//                       get the scoop{" "}
-//                       {/* <img
-//                       src={linkImg}
-//                       style={styles.gh}
-//                       className="btn btn-transparent bg-transparent"
-//                     ></img> */}
-//                     </a>
-//                   </span>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           {/* //////////////////////////////////////////////////////// */}
-//           {/* //////////////////////////////////////////////////////// */}
-//           {/* BOOKIFY CARD */}
-//           <div className="preview-card">
-//             <div className="preview-card__wrp">
-//               <div className="preview-card__item">
-//                 <div className="preview-card__img">
-//                   <a
-//                     href="https://bookify-project-du.herokuapp.com/"
-//                     target="_blank"
-//                     className="btn"
-//                   >
-//                     <img src={bookify} alt="" id="mcImg" />
-//                   </a>
-//                 </div>
-//                 {/* BOKIFY CONTENT */}
-//                 <div className="preview-card__content">
-//                   <span className="preview-card__code">June 2022</span>
-//                   <div className="preview-card__title">BOOKIFY</div>
-//                   <div className="preview-card__text">
-//                     Not your average book search engine. <br></br> Log all of
-//                     your past books and get recommended on your next book by
-//                     genre. <br></br>Still can't decide on a book? Take a quiz
-//                     and find out ! <br></br>
-//                     <br></br>
-//                     <span>
-//                       <img src={sql} style={styles.logo2} />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={mysql} style={styles.logo2} />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={handlebars} style={styles.logo1} />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={axios} style={styles.logo1} />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={express} style={styles.logo1} />
-//                     </span>{" "}
-//                   </div>
-//                   <br></br>
-
-//                   {/* BOOKIFY LINKS */}
-//                   <a
-//                     href="https://github.com/addiguskey/bookify"
-//                     target="_blank"
-//                   >
-//                     {" "}
-//                     <img
-//                       src={githubImg}
-//                       style={styles.gh}
-//                       className="btn-transparent repo bg-transparent"
-//                       id="bookify-mc"
-//                     />
-//                   </a>
-//                   <span>
-//                     <a
-//                       href="https://bookify-project-du.herokuapp.com/"
-//                       target="_blank"
-//                       className="btn btn-outline-dark mx-3"
-//                     >
-//                       bookwarms only!
-//                     </a>
-//                   </span>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           {/* //////////////////////////////////////////////////////// */}
-//           {/* //////////////////////////////////////////////////////// */}
-
-//           {/* RNB CARD */}
-//           <div className="preview-card">
-//             <div className="preview-card__wrp">
-//               <div className="preview-card__item">
-//                 <div className="preview-card__img">
-//                   <a
-//                     href="https://addiguskey.github.io/Rhythm-and-Booze/"
-//                     target="_blank"
-//                     className="btn"
-//                   >
-//                     <img src={rnb} alt="" id="mcImg" />
-//                   </a>
-//                 </div>
-//                 {/* RNB CONTENT */}
-//                 <div className="preview-card__content">
-//                   <span className="preview-card__code">May 2022</span>
-//                   <div className="preview-card__title">Rhythm & Booze</div>
-//                   <div className="preview-card__text">
-//                     Your next Friday night plans- but, make it random
-//                     <br></br>
-//                     <br></br>
-//                     <span>
-//                       <img src={html} style={styles.logo1} />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={css} style={styles.logo1} />
-//                     </span>{" "}
-//                     <span>
-//                       <img src={js} style={styles.logo1} />
-//                     </span>{" "}
-//                   </div>
-//                   <br></br>
-
-//                   {/* RNB LINKS */}
-//                   <a
-//                     href="https://github.com/addiguskey/Rhythm-and-Booze"
-//                     target="_blank"
-//                   >
-//                     {" "}
-//                     <img
-//                       src={githubImg}
-//                       style={styles.gh}
-//                       className="btn-transparent repo bg-transparent"
-//                       id="rnb-mc"
-//                     />
-//                   </a>
-//                   <span>
-//                     <a
-//                       href="https://addiguskey.github.io/Rhythm-and-Booze/"
-//                       target="_blank"
-//                       className="btn btn-outline-dark mx-3"
-//                     >
-//                       {" "}
-//                       find your combo
-//                     </a>
-//                   </span>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
+import projbg from "../../assets/images/proj/projbg.png";
+import mlmapreview from "../../assets/images/proj/mlmapreview.png";
+import mcpreview from "../../assets/images/proj/mcpreview.png";
+import bookpreview from "../../assets/images/proj/bookpreview.png";
+import rnbpreview from "../../assets/images/proj/rnbpreview.png";
 
 const styles = {
+  pgTitle: {
+    fontWeight: 800,
+    fontSize: "4.5rem",
+    color: "#1E5CD7",
+    marginRight: "10rem",
+    marginTop: "5%",
+  },
   card: {
-    borderRadius: "5mm",
-    backgroundColor: "#afb9b2",
-    height: "25rem",
-    width: "23rem",
+    borderRadius: "0mm",
+    // backgroundColor: "#d9d9d9",
+    height: "20rem",
+    width: "35rem",
     zIndex: 2,
     filter: "opacity(80%)",
+  },
+  mcpreview: {
+    borderRadius: "0mm",
+    // backgroundColor: "#d9d9d9",
+    height: "20rem",
+    marginTop: "-1.5rem",
+    marginLeft: "-1.5rem",
+
+    width: "40rem",
+    zIndex: 2,
+    // filter: "brightness(0.5)",
+  },
+  projoverview: {
+    zIndex: 4,
+    color: "#2a2f2a",
+    fontWeight: 700,
+    marginTop: "-0.5rem",
+  },
+  projdesc: {
+    zIndex: 4,
+    color: "#2a2f2a",
+    fontWeight: 500,
+    lineHeight: 1.2,
+    fontSize: "1.1rem",
   },
   ghlogo: {
     maxWidth: "3rem",
     maxheight: "3rem",
-    marginLeft: "18.5rem",
-    marginTop: "0rem",
+    marginLeft: "30.5rem",
+    marginTop: "-3.5rem",
+  },
+  mctitle: {
+    fontWeight: 800,
+    fontSize: "3.5rem",
+    textDecoration: "none",
+    color: "white",
+    marginTop: "-4rem",
   },
   title: {
-    fontWeight: "bold",
+    fontWeight: 800,
+    fontSize: "3.5rem",
     textDecoration: "none",
-    color: "2d3a31",
+    color: "white",
+    marginTop: "-4rem",
+  },
+  contentWrapper: {
+    marginTop: "1rem",
+    zIndex: 3,
+    // marginLeft: "-1.5rem",
+  },
+  cardContent: {
+    marginLeft: "-2rem",
+    zIndex: 3,
   },
   content: {
-    lineHeight: 0.5,
-    color: "2d3a31",
+    lineHeight: 1.1,
+    marginTop: "-0.8rem",
+    color: "865786",
+    fontWeight: 700,
+    fontSize: "1.5rem",
   },
   mlmalogo: {
-    filter: "opacity(100%)",
-    height: "17rem",
+    filter: "opacity(30%)",
+    height: "14rem",
     width: "auto",
-    marginTop: "0rem",
-    marginLeft: "0.5rem",
+    marginTop: "-10.5rem",
+    marginLeft: "17rem",
+    zIndex: 3,
   },
   mclogo: {
-    filter: "opacity(100%)",
-    height: "19rem",
+    filter: "opacity(40%)",
+    height: "16.5rem",
     width: "auto",
-    marginTop: "-1rem",
+    marginTop: "-19rem",
     marginBottom: "-1rem",
+    marginLeft: "16rem",
+    zIndex: 3,
   },
   booklogo: {
-    filter: "opacity(100%)",
-    height: "16rem",
+    filter: "opacity(40%)",
+    height: "13rem",
     width: "auto",
-    marginTop: "1rem",
-    marginLeft: "1.5rem",
-    marginBottom: "0rem",
+    marginTop: "-12rem",
+    marginLeft: "18rem",
+    marginBottom: "0.5rem",
+    zIndex: 3,
   },
   rnblogo: {
-    filter: "opacity(100%)",
-    height: "18.2rem",
+    filter: "opacity(40%)",
+    height: "16rem",
     width: "auto",
-    marginTop: "-0.5rem",
+    marginTop: "-14rem",
     marginBottom: "-0.8rem",
+    marginLeft: "16rem",
+
+    zIndex: 1,
+    zIndex: 3,
+  },
+  bgimg: {
+    zIndex: 1,
+    marginTop: "-32rem",
+    width: "45rem",
+    height: "auto",
+  },
+  note: {
+    marginTop: "-6.5rem",
+    fontWeight: 700,
+    fontSize: "1rem",
+    textDecoration: "none",
+    color: "white",
+    marginLeft: "18rem",
   },
 };
 export default function Projects() {
   return (
-    <div className="p-2 mx-5">
-      <div>
-        <h1
-          style={{
-            fontWeight: "bold",
-            fontSize: "3rem",
-            color: "#f4f593",
-          }}
-        >
-          projects.
-        </h1>
+    <section id="projects" className="p-2 mx-5">
+      {" "}
+      <div className="d-flex flex-row-reverse">
+        {" "}
+        <h1 style={styles.pgTitle}>previous stuff.</h1>
       </div>
-      <div className="d-flex flex-column p-3 ">
-        <div className="row p-5" style={{ marginLeft: "6rem" }}>
+      <div
+        className="d-flex flex-column p-3 justify-content-between"
+        id="container"
+      >
+        <div
+          className="row p-5 mb-5"
+          id="container-row"
+          style={{ marginLeft: "12rem", marginBottom: "10rem" }}
+        >
           {/* ----------------------------------------------- */}
           {/* ----------------------mlma----------------------*/}
           {/* ----------------------------------------------- */}
-          <div className="col p-2">
-            <div className="card border-0 p-2 " style={styles.card}>
-              <div className="card-content mx-2">
-                <a href="https://github.com/addiguskey/mlma" target="_blank">
-                  <h2 className="proj-title" style={styles.title}>
-                    mlma
-                  </h2>
-                </a>
-                <p style={styles.content}>
-                  <em>martial arts website revamped</em>
-                </p>
-                <div className="mx-4">
-                  {" "}
-                  <a
-                    href="https://github.com/addiguskey/mlma"
-                    target="_blank"
-                    clssName="projlogo"
-                  >
-                    <img
-                      src={mlma}
-                      style={styles.mlmalogo}
+          <div className="col p-2" style={{ zIndex: 2 }}>
+            <div className="card-title mx-2">
+              <a href="https://github.com/addiguskey/mlma" target="_blank">
+                <h2 className="proj-title" style={styles.title}>
+                  mlma{" "}
+                </h2>
+              </a>
+            </div>
+
+            <div className="card bg-transparent border-0 p-2">
+              <div className="container">
+                <img
+                  className="mcPreview"
+                  src={mlmapreview}
+                  style={styles.mcpreview}
+                />
+                <div className="overlay">
+                  <div className="text mx-3" style={styles.cardContent}>
+                    <p style={styles.content}>
+                      <em>freelance front end developer (solo project)</em>
+                    </p>
+                    <div>
+                      <em style={styles.projoverview}>
+                        martial arts website - built with React.js, Bootstrap,
+                        and Email.js
+                      </em>
+
+                      <ul style={styles.projdesc}>
+                        {" "}
+                        <br></br>
+                        <li>
+                          Designed and re-built a customized product improving
+                          the existing design to optimize user experience
+                        </li>
+                        <li>
+                          Carried out the entire SDLC cycle in a timely mannter
+                          while leading effective communication with the client
+                        </li>
+                        <li>
+                          Identified optimization opportunities that will
+                          increase customer acquisition and user engagement
+                        </li>
+                      </ul>
+                    </div>{" "}
+                    <a
                       href="https://github.com/addiguskey/mlma"
                       target="_blank"
-                    ></img>
-                  </a>
+                    >
+                      <img
+                        className="ghlogo"
+                        src={githubImg}
+                        style={styles.ghlogo}
+                      ></img>
+                    </a>
+                  </div>
                 </div>
-                <a href="https://github.com/addiguskey/mlma" target="_blank">
-                  <img
-                    className="ghlogo"
-                    src={githubImg}
-                    style={styles.ghlogo}
-                  ></img>
-                </a>
               </div>
+
+              {/*              
+                <div className="mx-4">
+                  {" "}
+                  <img
+                    src={mlma}
+                    style={styles.mlmalogo}
+                    href="https://github.com/addiguskey/mlma"
+                    target="_blank"
+                  ></img>
+                </div> */}
             </div>
           </div>
 
           {/* ----------------------------------------------- */}
           {/* -----------------melted cone--------------------*/}
           {/* ----------------------------------------------- */}
-          <div className="col p-2">
-            <div className="card border-0 p-2" style={styles.card}>
-              <div className="card-content mx-2">
-                <a
-                  href="https://the-melted-cone.herokuapp.com/"
-                  target="_blank"
-                >
-                  <h2 className="proj-title" style={styles.title}>
-                    the melted cone
-                  </h2>
-                </a>
-                <p style={styles.content}>
-                  <em>order your favorite scoops online& subscribe</em>
-                </p>
-                <div className="mx-2">
-                  <a
-                    href="https://the-melted-cone.herokuapp.com/"
-                    target="_blank"
-                    clssName="projlogo"
-                  >
-                    <img src={mc} style={styles.mclogo}></img>
-                  </a>
-                </div>
+          <div className="col p-2" style={{ zIndex: 2 }}>
+            <div className="card-title mx-2">
+              <a href="https://the-melted-cone.herokuapp.com/" target="_blank">
+                <h2 className="proj-title" style={styles.mctitle}>
+                  the melted cone*
+                </h2>
+              </a>
+            </div>{" "}
+            <div className="card bg-transparent border-0 p-2">
+              <div className="container">
+                <img
+                  className="mcPreview"
+                  src={mcpreview}
+                  style={styles.mcpreview}
+                />
+                <div className="overlay">
+                  <div className="text mx-3" style={styles.cardContent}>
+                    {" "}
+                    <p style={styles.content}>
+                      <em>
+                        lead front-end developer, designer, and back-end
+                        developer
+                      </em>
+                    </p>
+                    <div style={styles.projoverview}>
+                      <em>
+                        ice cream e-commerce application- built with React.js,
+                        Bootstrap, Node.js, GraphQL, and Strip.js
+                      </em>
 
-                <a
-                  href="https://github.com/addiguskey/theMeltedCone"
-                  target="_blank"
-                >
-                  <img
-                    className="ghlogo"
-                    src={githubImg}
-                    style={styles.ghlogo}
-                  ></img>
-                </a>
+                      <ul style={styles.projdesc}>
+                        {" "}
+                        <br></br>
+                        <li>
+                          Designed the logo utilizing Adobe Illustrator and
+                          developed a seamless UI that allows an effortless UX
+                          utilizing Figma
+                        </li>
+                        <li>set up log-in, log-out, user profile system</li>
+                        <li>
+                          de-bugged back end database that is built with GraphQL
+                        </li>
+                        <li>
+                          Extensively developed and collaborated with back-end
+                          developers of the application while maintaining
+                          excellent source control
+                        </li>
+                      </ul>
+                    </div>
+                    {/* <div className="mx-2">
+                      <img src={mc} style={styles.mclogo}></img>
+                    </div> */}
+                    <a
+                      href="https://github.com/addiguskey/theMeltedCone"
+                      target="_blank"
+                    >
+                      <img
+                        className="ghlogo"
+                        src={githubImg}
+                        style={styles.ghlogo}
+                      ></img>
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
+            </div>{" "}
           </div>
           {/* ----------------------------------------------- */}
           {/* ---------------------bookify--------------------*/}
           {/* ----------------------------------------------- */}
-          <div className="col p-2">
-            <div className="card border-0 p-2" style={styles.card}>
-              <div className="card-content mx-2">
-                <a
-                  href="https://bookify-project-du.herokuapp.com/"
-                  target="_blank"
-                >
-                  <h2 className="proj-title" style={styles.title}>
-                    bookify
-                  </h2>
-                </a>
-                <p style={styles.content}>
-                  <em>find your next book with a quiz</em>
-                </p>
-                <div className="mx-4">
-                  <a
-                    href="https://bookify-project-du.herokuapp.com/"
-                    target="_blank"
-                  >
-                    {" "}
-                    <img src={bookify} style={styles.booklogo}></img>
-                  </a>
+          <div className="col p-2" style={{ zIndex: 2 }}>
+            <div className="card-title mx-2">
+              <a
+                href="https://bookify-project-du.herokuapp.com/"
+                target="_blank"
+              >
+                <h2 className="proj-title" style={styles.mctitle}>
+                  bookify*
+                </h2>
+              </a>
+            </div>
+
+            <div className="card bg-transparent border-0 p-2">
+              <div className="container">
+                <img
+                  className="mcPreview"
+                  src={bookpreview}
+                  style={styles.mcpreview}
+                />
+                <div className="overlay">
+                  <div className="text mx-3" style={styles.cardContent}>
+                    <p style={styles.content}>
+                      <em>
+                        lead front-end developer, designer, and back-end
+                        developer
+                      </em>
+                    </p>
+                    <div style={styles.projoverview}>
+                      <em>
+                        find your next book with a quiz (or per genre)- built
+                        with Handlebars, Express.js, MySQL, Node.js and Axios
+                      </em>
+
+                      <ul style={styles.projdesc}>
+                        {" "}
+                        <br></br>
+                        <li>Designed the logo utilizing Adobe Illustrator</li>
+                        <li>
+                          Delegated responsibilities amongst teammates and used
+                          Figma to map-out the UI and the development phase of
+                          the product life cycle
+                        </li>
+                        <li>
+                          Constructed external API calls with Axios for a robust
+                          array of book recommendations per genre{" "}
+                        </li>
+                        <li>
+                          {" "}
+                          Utilized MySQL/Sequelize to build a database where
+                          users’ previous books and respective reviews can be
+                          stored and edited
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://github.com/addiguskey/bookify"
+                      target="_blank"
+                    >
+                      <img
+                        className="ghlogo"
+                        src={githubImg}
+                        style={styles.ghlogo}
+                      ></img>
+                    </a>
+                  </div>
                 </div>
-                <a href="https://github.com/addiguskey/bookify" target="_blank">
-                  <img
-                    className="ghlogo"
-                    src={githubImg}
-                    style={styles.ghlogo}
-                  ></img>
-                </a>
               </div>
+
+              {/* <div className="mx-4" style={{ zIndex: 2 }}>
+                  {" "}
+                  <img src={bookify} style={styles.booklogo}></img>
+                </div> */}
             </div>
           </div>
+
           {/* ----------------------------------------------- */}
           {/* -----------------------r&b----------------------*/}
           {/* ----------------------------------------------- */}
-          <div className="col p-2">
-            <div className="card border-0 p-2" style={styles.card}>
-              <div className="card-content mx-2">
-                <a
-                  href="https://addiguskey.github.io/Rhythm-and-Booze/"
-                  target="_blank"
-                >
-                  <h2 className="proj-title" style={styles.title}>
-                    rhythm &booze
-                  </h2>
-                </a>
-                <p style={styles.content}>
-                  <em>your friday night plans</em>
-                </p>
+          <div className="col p-2" style={{ zIndex: 2 }}>
+            <div className="card-title mx-2">
+              <a
+                href="https://addiguskey.github.io/Rhythm-and-Booze/"
+                target="_blank"
+              >
+                <h2 className="proj-title" style={styles.mctitle}>
+                  rhythm &booze*
+                </h2>
+              </a>
+            </div>
+
+            <div className="card bg-transparent border-0 p-2">
+              <div className="container">
+                <img
+                  className="mcPreview"
+                  src={rnbpreview}
+                  style={styles.mcpreview}
+                />
+                <div className="overlay">
+                  <div className="text mx-3" style={styles.cardContent}>
+                    <p style={styles.content}>
+                      <em>front end developer</em>
+                    </p>
+                    <div style={styles.projoverview}>
+                      <em>
+                        Discover new music and coctail recipes- built with
+                        HTML5, CSS3, JavaScript (jQuery)
+                      </em>
+
+                      <ul style={styles.projdesc}>
+                        {" "}
+                        <br></br>
+                        <li>
+                          Executed an aesthetically pleasing and accessible
+                          design to offer an entertaining experience for all
+                          users
+                        </li>
+                        <li>
+                          Aided fellow developers to increase efficiency and
+                          quality of the production while minimizing merge
+                          conflicts
+                        </li>
+                        <li>
+                          Implemented multiple third-party API calls using
+                          advanced array methods to query cocktail recipes,
+                          ingredients, measurements and music recommendations
+                        </li>
+                      </ul>
+                    </div>
+                    {/*                 
                 <div className="mx-4">
                   {" "}
-                  <a
-                    href="https://addiguskey.github.io/Rhythm-and-Booze/"
-                    target="_blank"
-                  >
-                    <img src={rnb} style={styles.rnblogo}></img>
-                  </a>
+                  <img src={rnb} style={styles.rnblogo}></img>
+                </div> */}
+                    <a
+                      href="https://github.com/addiguskey/Rhythm-and-Booze"
+                      target="_blank"
+                    >
+                      <img
+                        className="ghlogo"
+                        src={githubImg}
+                        style={styles.ghlogo}
+                      ></img>
+                    </a>
+                  </div>
                 </div>
-                <a
-                  href="https://github.com/addiguskey/Rhythm-and-Booze"
-                  target="_blank"
-                >
-                  <img
-                    className="ghlogo"
-                    src={githubImg}
-                    style={styles.ghlogo}
-                  ></img>
-                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div className="d-flex flex-row-reverse">
+        <img src={projbg} style={styles.bgimg}></img>
+      </div>
+      <div className="d-flex flex-column" style={styles.note}>
+        <p style={{ zIndex: 3 }}>*these are university projects</p>
+      </div>
+    </section>
   );
 }

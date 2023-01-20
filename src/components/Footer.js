@@ -10,7 +10,7 @@ const styles = {
   foot: {
     fontSize: 14,
     color: "#7a7875",
-    padding: 12,
+    // padding: 12,
   },
   line: {
     color: "black",
@@ -44,7 +44,10 @@ class Footer extends Component {
   render() {
     return (
       <div id="socials" className="d-flex flex-column my-5">
-        <ul className="socials-ul">
+        <ul
+          className="socials-ul"
+          style={{ marginBottom: "5rem", marginTop: "-5rem" }}
+        >
           <li style={{ listStyle: "none", maxWidth: "2rem" }}>
             <a href="https://github.com/addiguskey" target="_blank">
               <img
@@ -72,21 +75,19 @@ class Footer extends Component {
               />
             </a>
           </li>
-          {/* <img src={line} style={styles.img}></img> */}
         </ul>
 
         <div id="foot2">
-          {/* <div className="vr" style={styles.line}></div> */}
           <div
-            className="d-flex flex-column align-items-center  p-5"
-            style={{ marginTop: "14%" }}
+            className="d-flex flex-column align-items-center"
+            style={{ marginTop: "10%", marginBottom: "-2%" }}
           >
-            {this.state.screenSizeFits && (
+            {/* {this.state.screenSizeFits && (
               <img src={qrcode} style={{ height: "4.5rem" }}></img>
             )}
             {!this.state.screenSizeFits && (
               <img src={image} style={{ height: "2.5rem" }}></img>
-            )}
+            )} */}
 
             <p style={{ color: "gray", fontSize: "0.8rem" }} id="foot">
               Designed and Built by Addi Guskey

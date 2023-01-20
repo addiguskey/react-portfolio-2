@@ -15,15 +15,11 @@ export default function App() {
       <Router>
         <div>
           <Navbar />
-          <div>
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/about" element={<About />} />
-              <Route exact path="/home" element={<Home />} />
-              <Route exact path="/projects" element={<Projects />} />
-              <Route exact path="/contact" element={<Contact />} />
-              <Route exact path="/resume" element={<Resume />} />
-            </Routes>
+          <div className="d-flex flex-column">
+            <Home></Home>
+            <About></About>
+            <Projects></Projects>
+            <Contact></Contact>
             <Footer />
           </div>
         </div>

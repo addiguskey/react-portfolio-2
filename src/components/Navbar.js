@@ -7,14 +7,43 @@ import filler from "../assets/images/blank.png";
 
 const styles = {
   navwrapper: {
-    backgroundColor: "#21482d",
+    backgroundColor: "#e9e1d6",
   },
   li: {
     listStyle: "none",
     lineHeight: "80%",
-    // padding: "0.2rem",
     marginRight: 0,
-    color: "#a9aea2",
+    color: "white",
+    display: "inline-block",
+    marginTop: "0.8rem",
+  },
+  email: {
+    listStyle: "none",
+    lineHeight: "80%",
+    marginRight: 0,
+    textDecoration: "none",
+    display: "inline-block",
+    fontWeight: "bold",
+  },
+  emailText: {
+    color: "white",
+    marginTop: "-4rem",
+    marginLeft: "75vw",
+    fontWeight: 600,
+    lineHeight: 0,
+    fontSize: "0.8rem",
+    marginBottom: "-7rem",
+  },
+  liText: {
+    color: "white",
+    fontWeight: 700,
+    fontSize: "1.3rem",
+  },
+  cv: {
+    color: "black",
+    fontWeight: 700,
+    // lineHeight: 0.5,
+    fontSize: "1.2rem",
   },
 };
 export default function Navbar() {
@@ -35,10 +64,11 @@ export default function Navbar() {
         <div class="meat"></div>
         <div class="bottom-bun"></div>
       </label>
-      <div className="nav d-flex flex-column " style={styles.navwrapper}>
-        <div className="nav-wrapper ">
+
+      <nav className="nav d-flex flex-column " style={styles.navwrapper}>
+        <div className="container-fluid justify-content-between ">
           <ul style={styles.li} className="menu-items ">
-            <li style={styles.li}>
+            {/* <li style={styles.li}>
               <Link to="/">
                 <img
                   src={useLocation().pathname == "/" ? filler : img}
@@ -46,56 +76,47 @@ export default function Navbar() {
                   id="nav-logo"
                 />
               </Link>
+            </li> */}
+            <li style={styles.li}>
+              <a
+                href="#about-me"
+                className="btn about-me "
+                style={styles.liText}
+              >
+                about
+              </a>
             </li>
             <li style={styles.li}>
-              <Link to="/about">
-                <a
-                  id="about-me"
-                  className="about-me btn bg-transparent"
-                  style={{ color: "#a9aea2" }}
-                >
-                  about - 0.1
-                </a>
-              </Link>
+              <a
+                href="#projects"
+                className="btn projects "
+                style={styles.liText}
+              >
+                projects
+              </a>
             </li>
             <li style={styles.li}>
-              <Link to="/projects">
-                <a
-                  id="projects"
-                  className="projects btn bg-transparent"
-                  style={{ color: "#a9aea2" }}
-                >
-                  projects - 0.2
-                </a>
-              </Link>
-            </li>
-            <li style={styles.li}>
-              <Link to="/contact">
-                <a
-                  id="contact"
-                  className="contact btn bg-transparent"
-                  style={{ color: "#a9aea2" }}
-                >
-                  contact me - 0.3
-                </a>
-              </Link>
+              <a href="#contact" className="btn contact " style={styles.liText}>
+                contact me
+              </a>
             </li>
             <li style={styles.li}>
               <div
                 className="btn bg-transparent"
                 onClick={saveFile}
-                style={{
-                  color: "#f4f593",
-                  fontWeight: "bold",
-                  lineHeight: 0.8,
-                }}
+                style={styles.cv}
               >
-                download CV - 0.4
+                download CV
               </div>
-            </li>
+            </li>{" "}
+            {/* <li style={styles.email} className=" flex-shrink-1"> */}
+            {/* <a style={styles.emailText} href="mailto:addisonguskey@gmail.com">
+              addisonguskey@gmail.com
+            </a> */}
+            {/* </li>{" "} */}
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
   );
 }

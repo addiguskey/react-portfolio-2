@@ -1,20 +1,33 @@
 import React, { useState } from "react";
 import ContactForm from "../contactForm";
 import Stack from "react-bootstrap/Stack";
-import stamp from "../../assets/images/stamp.png";
+import stamp from "../../assets/images/stamp2.png";
 import code from "../../assets/images/code.png";
-
 const styles = {
-  all: {
-    color: "a9aea2",
+  pgTitle: {
+    fontWeight: 800,
+    fontSize: "4.5rem",
+    color: "#1E5CD7",
+    marginLeft: "10rem",
+    marginTop: "6%",
   },
-  a: {
-    textWeight: "bold",
-    color: "a9aea2",
-  },
+
   posrtcard: {
-    borderRadius: "5mm",
+    borderRadius: "10mm",
     padding: "20rem",
+    color: "#4a4950",
+    border: " none",
+    backgroundColor: "#D9D9D9",
+    width: "70vw",
+    height: "32rem",
+  },
+  emailText: {
+    color: "white",
+    marginLeft: "12rem",
+    fontWeight: 600,
+    lineHeight: 0,
+    fontSize: "1rem",
+    marginBottom: "2rem",
   },
 };
 
@@ -30,35 +43,34 @@ export default function Contact() {
     setError(isError);
   };
   return (
-    <div className="p-5 mx-3" style={styles.all}>
-      <h1
-        style={{
-          fontWeight: "bold",
-          fontSize: "3rem",
-          color: "#f4f593",
-        }}
-      >
-        let's connect.
-      </h1>
-      <p className="mx-4">addisonguskey@gmail.com</p>
-      <div
-        className=" card bg-transparent p-5 mx-5 flex-clolumn align-items-center mt-5"
-        id="postcard"
-        style={styles.posrtcard}
-      >
-        <Stack direction="horizontal" gap={3}>
-          <div>
-            <h5></h5>
-          </div>
-          <div className="ms-auto">
-            <img src={stamp} style={{ height: "4rem" }}></img>
-          </div>
-        </Stack>
-        <ContactForm
-          openMsgMadolFunc={openMsgMadolFunc}
-          checkIsErrorFunc={checkIsErrorFunc}
-        />
+    <section id="contact" className="d-flex flex-column p-5 mx-3">
+      <h1 style={styles.pgTitle}>let's connect.</h1>
+      <a style={styles.emailText} href="mailto:addisonguskey@gmail.com">
+        addisonguskey@gmail.com
+      </a>
+      <div className="d-flex flex-column align-items-center">
+        <div
+          className="card p-5 mx-5 mt-4"
+          id="postcard"
+          style={styles.posrtcard}
+        >
+          <Stack
+            direction="horizontal"
+            // gap={3}
+          >
+            <div>
+              <h5></h5>
+            </div>
+            <div className="ms-auto">
+              <img src={stamp} style={{ height: "5.3rem" }}></img>
+            </div>
+          </Stack>
+          <ContactForm
+            openMsgMadolFunc={openMsgMadolFunc}
+            checkIsErrorFunc={checkIsErrorFunc}
+          />
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
