@@ -17,8 +17,8 @@ const styles = {
   },
   title: {
     fontWeight: 800,
-    fontSize: "4.5rem",
-    color: "#1E5CD7",
+    fontSize: "4.5vw",
+    color: "black",
     marginLeft: "10rem",
   },
   me: {
@@ -28,10 +28,11 @@ const styles = {
     marginLeft: "-4rem",
   },
   facts: {
-    color: "gray",
+    color: "white",
     lineHeight: 1.1,
     fontWeight: 500,
     fontSize: "1rem",
+    fontFamily: "Lora, serif",
   },
 };
 
@@ -88,13 +89,18 @@ export default function About() {
             >
               <h3
                 className="card-title"
-                style={{ fontWeight: 800, lineHeight: 1.2 }}
+                style={{
+                  fontWeight: "bold",
+                  lineHeight: 1.2,
+                  color: "025023",
+                  fontFamily: "Lora, serif",
+                }}
               >
-                Hello!
+                <em> Hello!</em>
               </h3>
               <p
                 style={{
-                  color: "#865786",
+                  color: "#da5c3a",
                   fontWeight: 800,
                   lineHeight: 1.2,
                   fontSize: "1.2rem",
@@ -123,7 +129,7 @@ export default function About() {
                 style={{
                   fontWeight: 500,
                   lineHeight: 1.2,
-                  color: "white",
+                  color: "025023",
                   fontSize: "1.1rem",
                 }}
               >

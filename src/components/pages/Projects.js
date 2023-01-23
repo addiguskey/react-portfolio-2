@@ -13,35 +13,34 @@ import rnbpreview from "../../assets/images/proj/rnbpreview.png";
 const styles = {
   pgTitle: {
     fontWeight: 800,
-    fontSize: "4.5rem",
-    color: "#1E5CD7",
+    fontSize: "4.5vw",
+    color: "black",
     marginRight: "10rem",
     marginTop: "5%",
   },
-  card: {
-    borderRadius: "0mm",
-    // backgroundColor: "#d9d9d9",
-    height: "20rem",
-    width: "35rem",
-    zIndex: 2,
-    filter: "opacity(80%)",
-  },
+  // card: {
+  //   borderRadius: "0mm",
+  //   // backgroundColor: "#d9d9d9",
+  //   height: "20rem",
+  //   width: "35rem",
+  //   zIndex: 2,
+  //   filter: "opacity(80%)",
+  // },
   mcpreview: {
     borderRadius: "0mm",
-    // backgroundColor: "#d9d9d9",
-    height: "20rem",
+    height: "25rem",
     marginTop: "-1.5rem",
     marginLeft: "-1.5rem",
-
-    width: "40rem",
+    marginBottom: "4rem",
+    width: "48rem",
     zIndex: 2,
-    // filter: "brightness(0.5)",
   },
   projoverview: {
     zIndex: 4,
-    color: "#2a2f2a",
+    color: "#025023",
     fontWeight: 700,
     marginTop: "-0.5rem",
+    lineHeight: 1,
   },
   projdesc: {
     zIndex: 4,
@@ -54,7 +53,7 @@ const styles = {
     maxWidth: "3rem",
     maxheight: "3rem",
     marginLeft: "30.5rem",
-    marginTop: "-3.5rem",
+    marginTop: "-1.5rem",
   },
   mctitle: {
     fontWeight: 800,
@@ -62,6 +61,7 @@ const styles = {
     textDecoration: "none",
     color: "white",
     marginTop: "-4rem",
+    // zIndex: 2,
   },
   title: {
     fontWeight: 800,
@@ -82,7 +82,7 @@ const styles = {
   content: {
     lineHeight: 1.1,
     marginTop: "-0.8rem",
-    color: "865786",
+    color: "da5c3a",
     fontWeight: 700,
     fontSize: "1.5rem",
   },
@@ -130,11 +130,11 @@ const styles = {
     height: "auto",
   },
   note: {
-    marginTop: "-6.5rem",
+    marginTop: "-9.5rem",
     fontWeight: 700,
-    fontSize: "1rem",
+    fontSize: "1.1rem",
     textDecoration: "none",
-    color: "white",
+    color: "gray",
     marginLeft: "18rem",
   },
 };
@@ -147,13 +147,13 @@ export default function Projects() {
         <h1 style={styles.pgTitle}>previous stuff.</h1>
       </div>
       <div
-        className="d-flex flex-column p-3 justify-content-between"
+        className="d-flex flex-column p-3 justify-content-between "
         id="container"
       >
         <div
-          className="row p-5 mb-5"
+          className="row p-5 mb-5 align-items-center"
           id="container-row"
-          style={{ marginLeft: "12rem", marginBottom: "10rem" }}
+          style={{ marginLeft: "3rem" }}
         >
           {/* ----------------------------------------------- */}
           {/* ----------------------mlma----------------------*/}
@@ -189,16 +189,17 @@ export default function Projects() {
                         {" "}
                         <br></br>
                         <li>
-                          Designed and re-built a customized product improving
-                          the existing design to optimize user experience
+                          Designed and re-built a customized product, improving
+                          the existing design to streamline user experience
                         </li>
                         <li>
-                          Carried out the entire SDLC cycle in a timely mannter
-                          while leading effective communication with the client
+                          Carried out the SDLC cycle in a timely manner while
+                          leading effective communication with the client
                         </li>
                         <li>
-                          Identified optimization opportunities that will
-                          increase customer acquisition and user engagement
+                          Identified and executed optimization opportunities
+                          that will increase customer acquisition and user
+                          engagement
                         </li>
                       </ul>
                     </div>{" "}
@@ -452,9 +453,9 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-row-reverse">
+      {/* <div className="d-flex flex-row-reverse">
         <img src={projbg} style={styles.bgimg}></img>
-      </div>
+      </div> */}
       <div className="d-flex flex-column" style={styles.note}>
         <p style={{ zIndex: 3 }}>*these are university projects</p>
       </div>

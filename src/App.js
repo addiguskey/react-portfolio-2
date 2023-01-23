@@ -15,7 +15,7 @@ export default function App() {
       <Router>
         <div>
           <Navbar />
-          <div className="d-flex flex-column">
+          <div className="d-flex flex-column" id="port">
             <Home></Home>
             <About></About>
             <Projects></Projects>

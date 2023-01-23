@@ -6,8 +6,8 @@ import code from "../../assets/images/code.png";
 const styles = {
   pgTitle: {
     fontWeight: 800,
-    fontSize: "4.5rem",
-    color: "#1E5CD7",
+    fontSize: "4.5vw",
+    color: "black",
     marginLeft: "10rem",
     marginTop: "6%",
   },

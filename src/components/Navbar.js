@@ -7,7 +7,7 @@ import filler from "../assets/images/blank.png";
 
 const styles = {
   navwrapper: {
-    backgroundColor: "#e9e1d6",
+    backgroundColor: "#ded5c9",
   },
   li: {
     listStyle: "none",
@@ -16,6 +16,7 @@ const styles = {
     color: "white",
     display: "inline-block",
     marginTop: "0.8rem",
+    marginRight: "2rem",
   },
   email: {
     listStyle: "none",
@@ -42,8 +43,9 @@ const styles = {
   cv: {
     color: "black",
     fontWeight: 700,
-    // lineHeight: 0.5,
+    lineHeight: 0.5,
     fontSize: "1.2rem",
+    marginTop: "-0.4rem",
   },
 };
 export default function Navbar() {
@@ -66,7 +68,7 @@ export default function Navbar() {
       </label>
 
       <nav className="nav d-flex flex-column " style={styles.navwrapper}>
-        <div className="container-fluid justify-content-between ">
+        <div className="container-fluid ">
           <ul style={styles.li} className="menu-items ">
             {/* <li style={styles.li}>
               <Link to="/">
@@ -78,25 +80,17 @@ export default function Navbar() {
               </Link>
             </li> */}
             <li style={styles.li}>
-              <a
-                href="#about-me"
-                className="btn about-me "
-                style={styles.liText}
-              >
+              <a href="#about-me" className=" about-me " style={styles.liText}>
                 about
               </a>
             </li>
             <li style={styles.li}>
-              <a
-                href="#projects"
-                className="btn projects "
-                style={styles.liText}
-              >
+              <a href="#projects" className=" projects " style={styles.liText}>
                 projects
               </a>
             </li>
             <li style={styles.li}>
-              <a href="#contact" className="btn contact " style={styles.liText}>
+              <a href="#contact" className=" contact " style={styles.liText}>
                 contact me
               </a>
             </li>
