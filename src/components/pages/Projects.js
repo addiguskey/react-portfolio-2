@@ -29,10 +29,10 @@ const styles = {
   mcpreview: {
     borderRadius: "0mm",
     height: "25rem",
+    width: "48rem",
     marginTop: "-1.5rem",
     marginLeft: "-1.5rem",
     marginBottom: "4rem",
-    width: "48rem",
     zIndex: 2,
   },
   projoverview: {
@@ -147,12 +147,12 @@ export default function Projects() {
         <h1 style={styles.pgTitle}>previous stuff.</h1>
       </div>
       <div
-        className="d-flex flex-column p-3 justify-content-between "
-        id="container"
+        className="d-flex flex-column p-3 justify-content-around "
+        id="projContainer"
       >
         <div
           className="row p-5 mb-5 align-items-center"
-          id="container-row"
+          id="projcontainer-row"
           style={{ marginLeft: "3rem" }}
         >
           {/* ----------------------------------------------- */}

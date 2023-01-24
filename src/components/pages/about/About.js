@@ -79,8 +79,11 @@ export default function About() {
           style={{ width: "100%", border: "none" }}
         >
           <div className="row">
-            <div className="col card-body-left" style={{ maxWidth: "25rem" }}>
-              <img src={me} style={styles.me} />
+            <div
+              className="col card-body-left"
+              style={{ maxWidth: "25rem", position: "relative" }}
+            >
+              <img src={me} style={styles.me} id="myPic" />
             </div>
             {/* <div className="vr" id="about-vr" style={{ color: "a9aea2" }} /> */}
             <div

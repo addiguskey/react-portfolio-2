@@ -102,7 +102,7 @@ export default function ContactForm(props) {
               id="msg-box"
             />
           </div>
-          <div className="col" style={styles.info}>
+          <div className="col" style={styles.info} id="postInfo">
             <label style={styles.label2}>your name:</label>
             <input
               type="text"
