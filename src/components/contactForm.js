@@ -14,11 +14,14 @@ const styles = {
     marginTop: "-6.5rem",
     zIndex: 2,
     marginLeft: "1rem",
+    color: "db5029",
   },
   label2: {
     fontWeight: 800,
     fontSize: 30,
     lineHeight: 1.5,
+    color: "262fe4",
+
     // marginTop: "-3.5rem",
   },
   msg: {

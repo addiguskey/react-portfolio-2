@@ -16,8 +16,8 @@ const styles = {
   },
   name: {
     // color: "#1E5CD7",
-    color: "black",
-    fontSize: "13.2vw",
+    color: "#025023",
+    fontSize: "11.2vw",
     fontWeight: 900,
     lineHeight: 0.8,
     fontFamily: "Poppins, sans-serif",
@@ -25,7 +25,7 @@ const styles = {
   },
   name2: {
     // color: "#1E5CD7",
-    color: "black",
+    color: "025023",
     fontSize: "10.6vw",
     fontWeight: 900,
     lineHeight: 0.5,
@@ -36,24 +36,24 @@ const styles = {
   },
   desc: {
     marginTop: "1%",
-    color: "da5c3a",
+    color: "db5029",
     fontSize: "1.6vw",
     marginLeft: "-9vw",
-    lineHeight: 0,
+    lineHeight: 0.5,
     fontWeight: 700,
     // fontFamily: "Lora, serif",
   },
   desc2: {
     marginTop: "1.2%",
-    color: "da5c3a",
+    color: "db5029",
     fontSize: "1.6vw",
     marginLeft: "18vw",
-    lineHeight: 0,
+    lineHeight: 0.1,
     fontWeight: 700,
     // fontFamily: "Lora, serif",
   },
   desc3: {
-    color: "da5c3a",
+    color: "db5029",
     fontSize: "1.1vw",
     marginTop: "1.4vw",
     marginLeft: "3vw",
@@ -68,7 +68,7 @@ const styles = {
     marginLeft: "2vw",
     lineHeight: 0.5,
     fontWeight: 6800,
-    color: "025023",
+    color: "262fe4",
     fontFamily: "Lora, serif",
   },
 
@@ -117,7 +117,7 @@ export default function Home() {
             style={styles.nameContainer}
           >
             <h2 style={styles.name} id="name">
-              addi
+              <>addi</>
             </h2>
             <h2 style={styles.name2}>GUSKEY</h2>
             {/* <div style={styles.desc}> */}

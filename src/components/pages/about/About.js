@@ -100,7 +100,7 @@ export default function About() {
               </h3>
               <p
                 style={{
-                  color: "#da5c3a",
+                  color: "#db5029",
                   fontWeight: 800,
                   lineHeight: 1.2,
                   fontSize: "1.2rem",
@@ -119,7 +119,12 @@ export default function About() {
                 last semester of college.
               </p>
               <p
-                style={{ fontWeight: 800, lineHeight: 1.2, fontSize: "1.2rem" }}
+                style={{
+                  fontWeight: 800,
+                  lineHeight: 1.2,
+                  fontSize: "1.2rem",
+                  color: "262fe4",
+                }}
               >
                 I am an extremely fast learner, a compassionate self-starter and
                 a team-player who is excited to collaborate with other motivated

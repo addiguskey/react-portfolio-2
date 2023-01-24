@@ -82,7 +82,7 @@ const styles = {
   content: {
     lineHeight: 1.1,
     marginTop: "-0.8rem",
-    color: "da5c3a",
+    color: "db5029",
     fontWeight: 700,
     fontSize: "1.5rem",
   },

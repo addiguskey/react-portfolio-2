@@ -7,7 +7,7 @@ import filler from "../assets/images/blank.png";
 
 const styles = {
   navwrapper: {
-    backgroundColor: "#ded5c9",
+    backgroundColor: "#c7bdaf",
   },
   li: {
     listStyle: "none",
