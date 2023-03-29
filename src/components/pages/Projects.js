@@ -1,10 +1,5 @@
 import React from "react";
 import githubImg from "../../assets/images/logos/github-logo.png";
-import mlma from "../../assets/images/projlogos/mlmalogo.png";
-import mc from "../../assets/images/projlogos/mclogo.png";
-import bookify from "../../assets/images/projlogos/bookifylogo.png";
-import rnb from "../../assets/images/projlogos/rnblogo.png";
-import projbg from "../../assets/images/proj/projbg.png";
 import mlmapreview from "../../assets/images/proj/mlmapreview.png";
 import mcpreview from "../../assets/images/proj/mcpreview.png";
 import bookpreview from "../../assets/images/proj/bookpreview.png";
@@ -18,14 +13,7 @@ const styles = {
     marginRight: "10rem",
     marginTop: "5%",
   },
-  // card: {
-  //   borderRadius: "0mm",
-  //   // backgroundColor: "#d9d9d9",
-  //   height: "20rem",
-  //   width: "35rem",
-  //   zIndex: 2,
-  //   filter: "opacity(80%)",
-  // },
+
   mcpreview: {
     borderRadius: "0mm",
     height: "25rem",
@@ -37,8 +25,8 @@ const styles = {
   },
   projoverview: {
     zIndex: 4,
-    color: "#025023",
-    fontWeight: 700,
+    color: "black",
+    fontWeight: 800,
     marginTop: "-0.5rem",
     lineHeight: 1,
   },
@@ -82,9 +70,9 @@ const styles = {
   content: {
     lineHeight: 1.1,
     marginTop: "-0.8rem",
-    color: "db5029",
-    fontWeight: 700,
-    fontSize: "1.5rem",
+    color: "262fe4",
+    fontWeight: 900,
+    fontSize: "1.8rem",
   },
   mlmalogo: {
     filter: "opacity(30%)",
@@ -151,9 +139,9 @@ export default function Projects() {
         id="projContainer"
       >
         <div
-          className="row p-5 mb-5 align-items-center"
+          className="row p-4 mb-5 align-items-center"
           id="projcontainer-row"
-          style={{ marginLeft: "3rem" }}
+          style={{ marginLeft: "1rem" }}
         >
           {/* ----------------------------------------------- */}
           {/* ----------------------mlma----------------------*/}
@@ -177,12 +165,15 @@ export default function Projects() {
                 <div className="overlay">
                   <div className="text mx-3" style={styles.cardContent}>
                     <p style={styles.content}>
-                      <em>freelance front end developer (solo project)</em>
+                      freelance front end developer (solo project)
                     </p>
                     <div>
                       <em style={styles.projoverview}>
-                        martial arts website - built with React.js, Bootstrap,
-                        and Email.js
+                        martial arts website <br></br>
+                        <span style={{ color: "white" }}>
+                          {" "}
+                          - built with React.js, Bootstrap, and Email.js
+                        </span>
                       </em>
 
                       <ul style={styles.projdesc}>
@@ -216,17 +207,6 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-
-              {/*              
-                <div className="mx-4">
-                  {" "}
-                  <img
-                    src={mlma}
-                    style={styles.mlmalogo}
-                    href="https://github.com/addiguskey/mlma"
-                    target="_blank"
-                  ></img>
-                </div> */}
             </div>
           </div>
 
@@ -252,15 +232,15 @@ export default function Projects() {
                   <div className="text mx-3" style={styles.cardContent}>
                     {" "}
                     <p style={styles.content}>
-                      <em>
-                        lead front-end developer, designer, and back-end
-                        developer
-                      </em>
+                      lead front-end developer, designer, and back-end developer
                     </p>
                     <div style={styles.projoverview}>
                       <em>
-                        ice cream e-commerce application- built with React.js,
-                        Bootstrap, Node.js, GraphQL, and Strip.js
+                        ice cream e-commerce application<br></br>
+                        <span style={{ color: "white" }}>
+                          - built with React.js, Bootstrap, Node.js, GraphQL,
+                          and Strip.js
+                        </span>
                       </em>
 
                       <ul style={styles.projdesc}>
@@ -325,15 +305,15 @@ export default function Projects() {
                 <div className="overlay">
                   <div className="text mx-3" style={styles.cardContent}>
                     <p style={styles.content}>
-                      <em>
-                        lead front-end developer, designer, and back-end
-                        developer
-                      </em>
+                      lead front-end developer, designer, and back-end developer
                     </p>
                     <div style={styles.projoverview}>
                       <em>
-                        find your next book with a quiz (or per genre)- built
-                        with Handlebars, Express.js, MySQL, Node.js and Axios
+                        find your next book with a quiz (or per genre)<br></br>
+                        <span style={{ color: "white" }}>
+                          - built with Handlebars, Express.js, MySQL, Node.js
+                          and Axios
+                        </span>
                       </em>
 
                       <ul style={styles.projdesc}>
@@ -370,11 +350,6 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-
-              {/* <div className="mx-4" style={{ zIndex: 2 }}>
-                  {" "}
-                  <img src={bookify} style={styles.booklogo}></img>
-                </div> */}
             </div>
           </div>
 
@@ -402,13 +377,13 @@ export default function Projects() {
                 />
                 <div className="overlay">
                   <div className="text mx-3" style={styles.cardContent}>
-                    <p style={styles.content}>
-                      <em>front end developer</em>
-                    </p>
+                    <p style={styles.content}>front end developer</p>
                     <div style={styles.projoverview}>
                       <em>
-                        Discover new music and coctail recipes- built with
-                        HTML5, CSS3, JavaScript (jQuery)
+                        Discover new music and coctail recipes<br></br>{" "}
+                        <span style={{ color: "white" }}>
+                          - built with HTML5, CSS3, JavaScript (jQuery)
+                        </span>
                       </em>
 
                       <ul style={styles.projdesc}>
@@ -431,11 +406,7 @@ export default function Projects() {
                         </li>
                       </ul>
                     </div>
-                    {/*                 
-                <div className="mx-4">
-                  {" "}
-                  <img src={rnb} style={styles.rnblogo}></img>
-                </div> */}
+
                     <a
                       href="https://github.com/addiguskey/Rhythm-and-Booze"
                       target="_blank"
@@ -453,9 +424,6 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      {/* <div className="d-flex flex-row-reverse">
-        <img src={projbg} style={styles.bgimg}></img>
-      </div> */}
       <div className="d-flex flex-column" style={styles.note}>
         <p style={{ zIndex: 3 }}>*these are university projects</p>
       </div>

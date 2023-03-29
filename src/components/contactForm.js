@@ -14,7 +14,7 @@ const styles = {
     marginTop: "-6.5rem",
     zIndex: 2,
     marginLeft: "1rem",
-    color: "db5029",
+    color: "black",
   },
   label2: {
     fontWeight: 800,
@@ -109,7 +109,6 @@ export default function ContactForm(props) {
               name="user_name"
               style={styles.input}
               className="bg-transparent"
-              // className="bg-transparent"
             />
             <label style={styles.label2}>email:</label>
             <input

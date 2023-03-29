@@ -7,45 +7,29 @@ import filler from "../assets/images/blank.png";
 
 const styles = {
   navwrapper: {
-    backgroundColor: "#c7bdaf",
+    backgroundColor: "#EDEAE6",
   },
   li: {
     listStyle: "none",
     lineHeight: "80%",
     marginRight: 0,
-    color: "white",
+    color: "#99999",
     display: "inline-block",
-    marginTop: "0.8rem",
+    marginTop: "2rem",
     marginRight: "2rem",
   },
-  email: {
-    listStyle: "none",
-    lineHeight: "80%",
-    marginRight: 0,
-    textDecoration: "none",
-    display: "inline-block",
-    fontWeight: "bold",
-  },
-  emailText: {
-    color: "white",
-    marginTop: "-4rem",
-    marginLeft: "75vw",
-    fontWeight: 600,
-    lineHeight: 0,
-    fontSize: "0.8rem",
-    marginBottom: "-7rem",
-  },
+
   liText: {
     color: "white",
-    fontWeight: 700,
-    fontSize: "1.3rem",
+    fontWeight: 900,
+    fontSize: "2.8rem",
   },
   cv: {
     color: "black",
-    fontWeight: 700,
+    fontWeight: 900,
     lineHeight: 0.5,
-    fontSize: "1.2rem",
-    marginTop: "-0.4rem",
+    fontSize: "2.8rem",
+    marginTop: "-1.4rem",
   },
 };
 export default function Navbar() {
@@ -68,7 +52,7 @@ export default function Navbar() {
       </label>
 
       <nav className="nav d-flex flex-column " style={styles.navwrapper}>
-        <div className="container-fluid ">
+        <div className="container-fluid text-center">
           <ul style={styles.li} className="menu-items ">
             {/* <li style={styles.li}>
               <Link to="/">
@@ -91,7 +75,7 @@ export default function Navbar() {
             </li>
             <li style={styles.li}>
               <a href="#contact" className=" contact " style={styles.liText}>
-                contact me
+                contact
               </a>
             </li>
             <li style={styles.li}>
